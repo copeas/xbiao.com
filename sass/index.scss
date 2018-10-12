@@ -1,0 +1,318 @@
+@import "reset.scss";
+body,html{
+    height: 100%;
+    width: 100%;
+}
+// header
+header{
+    width: 100%;
+    padding:  12px 0;
+    z-index: 2;
+    .lslisi{
+        width: 1000px;
+        margin: 0 auto;
+        .left{
+            float: left;
+            .logo{
+                float: left;
+                float: left;
+                width: 134px;
+                height: 42px;
+                background: url(http://www.xbiao.com/images/pc/pub/head_logo.jpg);
+                margin-right: 38px;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: url() no-repeat;
+                }
+            }
+            .search{
+                position: relative;
+                width: 298px;
+                height: 30px;
+                // background-color: #fff;
+                border: 1px solid #d2d2d2;
+                margin-top: 6px;float: left;
+            }
+            input{
+                display: block;
+               
+                border: none;
+                outline: none;
+                width: 240px;
+                padding-left: 10px;
+                height: 30px;
+                line-height: 30px;
+                float: left;
+            }
+            .btsh{
+                position: absolute;
+                right: -1px;
+                top: -1px;
+                width: 37px;
+                height: 32px;
+                border-left: 1px solid #d2d2d2;
+                &:hover{
+                    background-color: #2f190e;
+                    width: 35px;
+                    height: 30px;
+                    border: 1px solid #2f190e;
+                }
+                button{
+                   
+                    border: 0;
+                    
+                    background: url(http://www.xbiao.com/images/pc/pub/topbar.png) 7px -135px;
+                    width: 37px;
+                    height: 32px;
+                    cursor: pointer;
+                    outline: none;
+                    &:hover{
+                        background-position: -33px -135px;
+                    }
+                }
+            }
+            .downloadApp{
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                background-image: url(http://www.xbiao.com/images/pc/pub/headerico.png);
+                background-repeat: no-repeat;
+                font-size: 14px;
+                margin-left: 24px;
+                margin-right: 12px;
+                background-position: 0 11px;
+                padding-left: 18px;
+                &:hover{
+                    background-position: 0 -19px;
+                    color:#996600;
+                }
+            }
+            span{
+                height: 16px;
+                width: 1px;
+                display: inline-block;
+                background-color:#ccc;
+                margin-top:12px;
+                vertical-align: top;  
+            }
+            .topWeibo{
+                width: 21px;
+                background-position: 0 -119px;
+                vertical-align: top;
+                margin-left: 16px;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                background-image: url(http://www.xbiao.com/images/pc/pub/headerico.png);
+                background-repeat: no-repeat;
+                font-size: 14px;
+                &:hover{
+                    background-position: 0 -150px;
+                }
+            }
+            .topWeichat{
+                width: 21px;
+                background-position: 0 -55px;
+                vertical-align: top;
+                margin-left: 16px;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                position: relative;
+                background-image: url(http://www.xbiao.com/images/pc/pub/headerico.png);
+                background-repeat: no-repeat;
+                font-size: 14px;
+                &:hover{
+                    background-position: 0 -85px;
+                }
+                i{
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 40px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #2d190f;
+                    padding: 10px;
+                    background-color: #fff;
+                    z-index: 2;
+                }
+                &:hover i{
+                    display: block;
+                }
+                
+            }
+        }
+        .center{
+            width: 70px;
+            height: 40px;
+            // background: yellowgreen;
+            float: left;
+            a{  
+                display: block;
+                width: 70px;
+                height: 40px;
+                // &:hover{
+
+                // }
+                
+                span{
+                    position: relative;
+                    margin-left:30px; 
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                    background: url(../images/shoppingcar.png) no-repeat center center;
+                    background-size: 20px 20px;  
+                    i{
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        color: #fff;
+                        font-size:12px; 
+                        background: yellowgreen;
+                        position: absolute;
+                        top: 0px;
+                        right: 0; 
+                        text-align: center;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+        .right{
+            float: right;
+            height:40px;
+            position: relative;
+            z-index: 2;
+            .login{
+                position: relative;
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+                padding-right: 15px;
+                padding-left: 25px;
+                a{
+                    display: inline-block;
+                    margin-right:-3px; 
+                    &:hover{
+                        color: #996600
+                    }
+                }
+                .show{
+                    
+                    color: #000;
+                }
+                .unshow{
+                    display: none;
+                   
+                    color: #000;
+                }
+                &:hover .unshow{
+                    display: inline;
+                }
+                &:hover .show{
+                    display: none;
+                }
+                &:hover{
+                    .method_hide{
+                        display: block;
+                    }
+                }
+                .method_hide{
+                    display: none;
+                    z-index: 2;
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    width:121px;                    
+                    border: 1px solid #c9c9c9;
+                    span{
+                        display: block;
+                        position: absolute;
+                        top: -8px;
+                        left: 51px;
+                        width: 17px;
+                        height: 8px;
+                        background: url(http://www.xbiao.com/images/pc/pub/topbar.png) -21px -184px;
+                        z-index: 3;
+                    }
+                    a{
+                        display: block;
+                        width: 121px;
+                        height: 44px;
+                        line-height: 44px;
+                        background: url(http://www.xbiao.com/images/pc/pub/ico_login.png) no-repeat;
+                    }
+                    .first_method{
+                        background: none;
+                        border-bottom: 1px dashed #c9c9c9; 
+                        text-align: center;
+                    }
+                    .second_method{
+                        background-position: 15px -2px ;
+                        border-bottom: 1px dashed #c9c9c9;
+                        text-indent:40px;  
+                    }
+                    .third_method{
+                        background-position: 15px -49px;
+                        border-bottom: 1px dashed #c9c9c9;
+                        text-indent:40px;   
+                    }
+                    .fourth_method{
+                        background-position: 15px -93px ;
+                        text-indent:40px;  
+                        
+                    }
+                }
+            }
+            .sign{
+                display: inline-block;
+                a{
+                    &:hover{
+                        color: #996600
+                    }
+                }
+            }
+           
+        }
+    }
+}
+// 瀑布流;
+
+.watch_container{
+    width: 100%;
+    ul{
+        width: 1000px;
+        margin: auto;
+        li{
+            width: 200px;
+            height: 400px;
+            text-align: center;
+            box-shadow: 0 0 5px #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        h3{
+            line-height: 40px;
+            text-align: left;
+        }
+        img{
+            display: block;
+            width: 224px;
+            height: 340px;
+             
+        }
+        button{
+            
+            width: 100%;
+            border-radius: 5px ;
+            background:none;
+            border : 1px solid #ddd;
+            background: yellowgreen;
+            color: #fff;
+        }
+    }
+}
