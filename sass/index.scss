@@ -288,6 +288,7 @@ header{
         width: 1000px;
         margin: auto;
         li{
+            float: left;
             width: 200px;
             height: 400px;
             text-align: center;
@@ -313,6 +314,8 @@ header{
             border : 1px solid #ddd;
             background: yellowgreen;
             color: #fff;
+            outline: yellowgreen;
+            cursor: pointer;
         }
     }
 }

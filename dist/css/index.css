@@ -272,6 +272,7 @@ header {
     width: 1000px;
     margin: auto; }
     .watch_container ul li {
+      float: left;
       width: 200px;
       height: 400px;
       text-align: center;
@@ -291,4 +292,6 @@ header {
       background: none;
       border: 1px solid #ddd;
       background: yellowgreen;
-      color: #fff; }
+      color: #fff;
+      outline: yellowgreen;
+      cursor: pointer; }
