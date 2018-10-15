@@ -41,6 +41,7 @@ gulp.task("html", ()=>{
 gulp.task("watch", ()=>{
     gulp.watch("index.html",["html","sass"]);
     gulp.watch("sass/*.scss",["html","sass"]);
+    gulp.watch("script/*.js",["html","script"])
 })
 
 gulp.task("default",["watch","connect"]);
@@ -48,9 +49,9 @@ gulp.task("default",["watch","connect"]);
 // script 转存指令;
 
 gulp.task("script", ()=>{
-    return gulp.src(["script/app/*.js","script/module/*.js","script/libs/*.js","!script/libs/jquery.js"])
-    .pipe(concat("mian.js"))
-    .pipe(uglify())
+    return gulp.src(["script/*.js","!script/libs/jquery.js"])
+    // .pipe(concat("mian.js"))
+    //.pipe(uglify())
     .pipe(gulp.dest("dist/script"));
 })
 

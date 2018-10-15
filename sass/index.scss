@@ -227,7 +227,8 @@ header{
                     position: absolute;
                     top: 40px;
                     left: 0;
-                    width:121px;                    
+                    width:121px;
+                    background:  #fff;                    
                     border: 1px solid #c9c9c9;
                     span{
                         display: block;
@@ -280,7 +281,290 @@ header{
         }
     }
 }
+
+//导航栏
+.nav_groups{
+    width: 100%;
+    height: 64px;
+    margin-bottom: 15px;
+    padding-top: 11px;
+    background: url(http://www.xbiao.com/images/pc/2017/menu-bg.jpg) repeat 0 0;
+    nav{
+        width: 1000px;
+        margin: 0 auto;
+        ul{
+            width: 1200px;
+            overflow: hidden;
+            li{
+                float: left;
+                padding: 0 23px 0 23px;
+                margin-left: -3px;
+                background: url(http://www.xbiao.com/images/pc/2017/menu-line.jpg) no-repeat left center;
+                dl{
+
+                    overflow: hidden;                    
+                    dt{
+                        float: left;
+                        margin-right: 20px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 26px;
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    dd{
+                        float: left;
+                        margin-right: 10px;
+                        font-size: 14px;
+                        line-height: 26px;
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    a:hover{
+                        color: #a66b42
+                    }
+                }
+            }
+        }
+    }
+}
+// 轮播图
+.banner{
+    width: 100%;
+    .banner_conner{
+        width: 1000px;
+        height: 480px;
+        margin: 0 auto 15px;       
+        .banner_detial{
+            width: 735px;
+            height: 480px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            ul{
+                width: 6615px;
+                height: 480px;
+                position: absolute;
+                
+                li{
+                    float: left;
+                    width: 735px;
+                    height: 480px;
+                    a{
+                        display: block;
+                        width: 735px;
+                        height: 480px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .btn_prve{
+                display: block;
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                margin-top: -30px;
+                width: 30px;
+                height: 60px;
+                background: url(http://www.xbiao.com/images/pc/2017/focus-arr.png) no-repeat 0 0;
+                opacity: 1;
+                z-index: 3;
+                transition: all 0.3s linear;
+            }
+            .btn_next{
+                display: block;
+                position: absolute;
+                right: -30px;
+                top: 50%;
+                margin-top: -30px;
+                width: 30px;
+                height: 60px;
+                background: url(http://www.xbiao.com/images/pc/2017/focus-arr.png) no-repeat top right;
+                opacity: 0;
+                z-index: 3;
+                transition: all 0.3s linear;
+            }
+
+            &:hover .btn_next{
+                right: 0px;
+                opacity: 1;
+            }
+            
+            dt{
+                position: absolute;
+                left: 0;
+                bottom: 44px;
+                height: 76px;
+                width: 735px;
+                background: url(http://www.xbiao.com/images/pc/2017/focus-bg.png) no-repeat bottom center;
+                a{  
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 735px;
+                    height: 76px;
+                    text-align: center;
+                    line-height: 76px;
+                    color: #fff;
+                    display: none;
+                    font-size: 20px;
+                }
+                .active{
+                    display: block
+                }
+            }
+            dd{
+                width: 735px;
+                height: 44px;
+                position: absolute;
+                text-align: center;
+                left: 0;
+                bottom: 0;
+                background: url(http://www.xbiao.com/images/pc/2017/focus-bg.png) no-repeat bottom center;
+            
+                    
+                line-height: 44px;
+                span{
+                    display: inline-block;
+                    width: 25px;
+                    height: 4px;
+                    margin: 0 10px;
+                    background: #959595;
+                }
+                .active{
+                    background: #fff;
+                }
+               
+            }
+
+        }
+        .banner_right{
+            float: right;
+            width: 250px;
+            height: 480px;
+            a{  
+                display: block;
+                width: 250px;
+                height: 480px;
+                img{
+                    width: 100%;
+                    height:100;
+                }
+            }
+        }     
+    }
+
+}
+// 品牌部分
+.brand_wrap{
+    width: 100%;
+    margin-bottom:20px; 
+    .brand_kinds{
+        width: 1000px;
+        margin: 0 auto 8px;
+        ul{ position: relative;
+            width: 1000px;
+            li{
+                width: 1000px;
+                height: 32px;
+                position: relative;
+                
+                p{
+                    width: 38px;
+                    height: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                    color:#959595;
+                   
+                    float: left;
+                }
+                dl{
+                    float: left;
+                    position: relative;                    
+                    width: 912px;
+                    overflow: hidden;
+                    height: 32px;
+                    dd{
+                        position: absolute;
+                        height: 32px;
+                        width: 1150px;
+                        a{
+                            width: 89px;
+                            padding: 0;
+                            margin: 0;
+                            display: inline-block;
+                            line-height: 32px;
+                            &:hover{
+                                color:#996600;
+                            }
+                        }
+                    }
+                }
+                dt{
+                    position: absolute;
+                    top: 0;
+                    right: 0;                    
+                    width: 51px;
+                    height: 18px;
+                    overflow: hidden;
+                    padding-top: 6px;
+                    background-color: #fff;
+                    
+                    a{  
+                        
+                        color: #a0a0a0;
+                        display: none;
+                        float:right;
+                        &:hover{
+                            color:#996600;
+                        }
+                    }
+                    .btn_left,.btn_left2,.btn_left3,.btn_left4{
+                        float: left;
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                        background-image: url(http://www.xbiao.com/images/pc/2017/brand-list-arr.png);
+                        background-repeat: no-repeat;
+                        background-position: 0 -34px;
+                        cursor: default;
+                    } 
+                    .brand_prev{
+                        background: url(http://www.xbiao.com/images/pc/2017/brand-list-arr.png) no-repeat 0 -62px;
+                        &:hover{
+                            
+                            background-position: top left
+                        }
+                        cursor: pointer;
+                    }
+                    
+                    .btn_right,.btn_right2,.btn_right3,.btn_right4{
+                        float: left;
+                        margin-left: 10px;
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                        background-image: url(http://www.xbiao.com/images/pc/2017/brand-list-arr.png);
+                        background-repeat: no-repeat;
+                        background-position: -28px -34px;
+                        cursor: pointer;
+                        &:hover{background-position: top right;}
+                    }
+                                    
+                }
+            }
+        }
+    }
+}
+
+
 // 瀑布流;
+
 
 .watch_container{
     width: 100%;
@@ -289,21 +573,25 @@ header{
         margin: auto;
         li{
             float: left;
-            width: 200px;
-            height: 400px;
+            width: 100px;
+            
             text-align: center;
             box-shadow: 0 0 5px #ddd;
             border-radius: 10px;
             overflow: hidden;
         }
         h3{
-            line-height: 40px;
+            line-height: 20px;
             text-align: left;
+            width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         img{
             display: block;
-            width: 224px;
-            height: 340px;
+            width: 100px;
+            height: 140px;
              
         }
         button{
@@ -319,3 +607,4 @@ header{
         }
     }
 }
+
