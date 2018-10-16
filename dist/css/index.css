@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input, figure, figcaption {
   margin: 0;
   padding: 0; }
@@ -486,6 +487,268 @@ header {
             cursor: pointer; }
             .brand_wrap .brand_kinds ul li dt .btn_right:hover, .brand_wrap .brand_kinds ul li dt .btn_right2:hover, .brand_wrap .brand_kinds ul li dt .btn_right3:hover, .brand_wrap .brand_kinds ul li dt .btn_right4:hover {
               background-position: top right; }
+
+/*******专题************/
+.subject_wrap {
+  width: 100%; }
+  .subject_wrap .subject {
+    width: 1000px;
+    height: 36px;
+    margin: 0 auto 20px; }
+    .subject_wrap .subject .sub_tit {
+      width: 1000px;
+      height: 36px; }
+      .subject_wrap .subject .sub_tit p {
+        width: 50px;
+        line-height: 36px;
+        float: left;
+        color: #a0a0a0; }
+      .subject_wrap .subject .sub_tit ul {
+        float: left; }
+        .subject_wrap .subject .sub_tit ul li {
+          width: 135px;
+          position: relative;
+          height: 36px;
+          margin-right: 12px;
+          float: left; }
+          .subject_wrap .subject .sub_tit ul li:hover .bigpic {
+            display: block; }
+          .subject_wrap .subject .sub_tit ul li .lilpic {
+            display: block;
+            width: 135px;
+            height: 36px; }
+            .subject_wrap .subject .sub_tit ul li .lilpic img {
+              width: 100%;
+              height: 100%; }
+          .subject_wrap .subject .sub_tit ul li .bigpic {
+            position: absolute;
+            z-index: 3;
+            left: -20px;
+            bottom: 36px;
+            width: 166px;
+            height: 137px;
+            display: none;
+            padding: 9px 0 0 7px;
+            background: url(http://www.xbiao.com/images/pc/2017/brand-bg.png) no-repeat 0 0; }
+      .subject_wrap .subject .sub_tit dt {
+        width: 65px;
+        height: 36px;
+        float: left; }
+        .subject_wrap .subject .sub_tit dt a {
+          display: block;
+          height: 36px;
+          border: 1px solid #f6f6f8;
+          border-radius: 3px;
+          margin-right: 0;
+          font-size: 14px;
+          color: #a0a0a0;
+          text-align: center;
+          background-image: url(http://www.xbiao.com/images/pc/2017/more.png);
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-color: #f6f6f8; }
+          .subject_wrap .subject .sub_tit dt a:hover {
+            background-color: #562916;
+            color: #fff;
+            border: 1px solid #562916;
+            background-position: top right; }
+
+.hot_wrap {
+  width: 100%; }
+  .hot_wrap .hot {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .hot_wrap .hot .hot_left {
+      float: left; }
+      .hot_wrap .hot .hot_left .top .left {
+        float: left;
+        margin-right: 11px;
+        width: 350px;
+        height: 462px;
+        border: 1px solid #f6f6f8;
+        margin-bottom: 15px;
+        position: relative; }
+        .hot_wrap .hot .hot_left .top .left .images {
+          display: block;
+          width: 350px;
+          height: 462px; }
+          .hot_wrap .hot .hot_left .top .left .images img {
+            width: 100%;
+            height: 100%; }
+        .hot_wrap .hot .hot_left .top .left .tit {
+          position: absolute;
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          padding-top: 20px;
+          font-size: 18px;
+          color: #fff;
+          background: url(http://www.xbiao.com/images/pc/2017/hot-pic-bg.png) repeat-x 0 0;
+          left: 0;
+          bottom: 0; }
+          .hot_wrap .hot .hot_left .top .left .tit:hover {
+            color: #a66b42; }
+      .hot_wrap .hot .hot_left .top .right {
+        float: right; }
+        .hot_wrap .hot .hot_left .top .right .up {
+          width: 350px;
+          height: 224px;
+          margin: 0 11px 15px 0;
+          position: relative; }
+          .hot_wrap .hot .hot_left .top .right .up .images {
+            display: block;
+            width: 350px;
+            height: 224px; }
+            .hot_wrap .hot .hot_left .top .right .up .images img {
+              width: 100%;
+              height: 100%; }
+          .hot_wrap .hot .hot_left .top .right .up .tit {
+            position: absolute;
+            width: 290px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            padding: 20px 30px 0;
+            font-size: 18px;
+            color: #fff;
+            background: url(http://www.xbiao.com/images/pc/2017/hot-pic-bg.png) repeat-x 0 0;
+            left: 0;
+            bottom: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+            .hot_wrap .hot .hot_left .top .right .up .tit:hover {
+              color: #996600; }
+      .hot_wrap .hot .hot_left .foot dl {
+        width: 350px;
+        height: 340px;
+        border: 1px solid #f6f6f8;
+        margin: 0 11px 15px 0;
+        float: left; }
+        .hot_wrap .hot .hot_left .foot dl dt {
+          width: 350px;
+          height: 262px; }
+          .hot_wrap .hot .hot_left .foot dl dt a {
+            display: block; }
+        .hot_wrap .hot .hot_left .foot dl dd {
+          padding: 11px 0;
+          background-color: #f6f6f8;
+          width: 350px;
+          height: 56px; }
+          .hot_wrap .hot .hot_left .foot dl dd a {
+            font-size: 18px;
+            color: #000;
+            text-align: center;
+            width: 350px;
+            height: 56px;
+            display: block;
+            line-height: 28px; }
+            .hot_wrap .hot .hot_left .foot dl dd a:hover {
+              color: #562916; }
+    .hot_wrap .hot .hot_right {
+      float: right; }
+      .hot_wrap .hot .hot_right .icon_list {
+        width: 268px;
+        border: 1px solid #e5e5e5;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 15px; }
+        .hot_wrap .hot .hot_right .icon_list a {
+          display: block;
+          float: left;
+          width: 67px;
+          height: 80px;
+          margin-left: -1px;
+          margin-top: -1px;
+          border-left: 1px solid #f2f2f2;
+          border-top: 1px solid #f2f2f2; }
+          .hot_wrap .hot .hot_right .icon_list a:hover {
+            color: #996600; }
+          .hot_wrap .hot .hot_right .icon_list a i {
+            display: block;
+            display: block;
+            width: 66px;
+            text-align: center;
+            padding-top: 50px;
+            height: 30px;
+            line-height: 30px;
+            font-style: normal;
+            font-size: 12px;
+            background-image: url(http://www.xbiao.com/images/pc/2017/icon-list.png);
+            background-repeat: no-repeat; }
+          .hot_wrap .hot .hot_right .icon_list a .icon_phone {
+            background-position: 20px 20px; }
+          .hot_wrap .hot .hot_right .icon_list a .icon_price {
+            background-position: -41px 20px; }
+          .hot_wrap .hot .hot_right .icon_list a .icon_compare {
+            background-position: -110px 20px; }
+          .hot_wrap .hot .hot_right .icon_list a .icon_ask {
+            background-position: -174px 20px; }
+          .hot_wrap .hot .hot_right .icon_list a .icon_tea {
+            background-position: 20px -60px; }
+          .hot_wrap .hot .hot_right .icon_list a .icon_bss {
+            background-position: -40px -60px; }
+          .hot_wrap .hot .hot_right .icon_list a .icon_libs {
+            background-position: -108px -60px; }
+          .hot_wrap .hot .hot_right .icon_list a .icon_video {
+            background-position: -174px -60px; }
+      .hot_wrap .hot .hot_right .hot_artical {
+        background-color: #f6f6f8;
+        width: 268px;
+        height: 580px; }
+        .hot_wrap .hot .hot_right .hot_artical dl {
+          width: 268px;
+          height: 580px;
+          overflow: hidden; }
+          .hot_wrap .hot .hot_right .hot_artical dl dt {
+            width: 268px;
+            height: 70px;
+            background: url(http://www.xbiao.com/images/pc/2017/hot-article.png) no-repeat 50% 35px; }
+          .hot_wrap .hot .hot_right .hot_artical dl dd {
+            width: 268px;
+            height: 85px; }
+            .hot_wrap .hot .hot_right .hot_artical dl dd a {
+              display: block;
+              padding: 16px 14px 12px;
+              background: url(http://www.xbiao.com/images/pc/2017/hot-border.png) repeat-x bottom center;
+              text-align: center;
+              width: 240px;
+              height: 56px;
+              line-height: 28px;
+              overflow: hidden;
+              font-size: 18px; }
+      .hot_wrap .hot .hot_right .hot_change {
+        width: 268px;
+        height: 37px;
+        background-color: #f6f6f8;
+        padding-top: 23px;
+        margin-top: -2px;
+        position: relative; }
+        .hot_wrap .hot .hot_right .hot_change i {
+          position: absolute;
+          top: 23px;
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: #d5d4d4; }
+        .hot_wrap .hot .hot_right .hot_change a {
+          display: block;
+          position: absolute;
+          top: 13px;
+          left: 59px;
+          width: 149px;
+          height: 29px;
+          line-height: 29px;
+          text-align: center;
+          border: 2px solid #d5d4d4;
+          background-color: #f6f6f8;
+          margin: 0 auto;
+          font-size: 14px;
+          color: #562916;
+          cursor: pointer; }
+          .hot_wrap .hot .hot_right .hot_change a:hover {
+            color: #a66b42; }
 
 .watch_container {
   width: 100%; }

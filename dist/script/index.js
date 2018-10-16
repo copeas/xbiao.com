@@ -309,3 +309,11 @@ movenav4.init({
     right_btn : ".btn_right4",
     hide_btn:".more4"
 })
+/***********换一批看看***************/
+$(function(){
+    $(".hot_change a").click(function(){
+        
+        $(".hot_list1").toggle()
+    })
+})
+
