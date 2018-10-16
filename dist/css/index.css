@@ -848,6 +848,202 @@ header {
               vertical-align: middle;
               margin-top: -2px; }
 
+/*********原创文章**************/
+.original_wrap {
+  width: 100%; }
+  .original_wrap .original {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .original_wrap .original .original_essay {
+      float: left;
+      width: 400px; }
+      .original_wrap .original .original_essay .essay_title {
+        width: 400px;
+        border-top: 1px solid  #e5e5e5; }
+        .original_wrap .original .original_essay .essay_title span {
+          display: block;
+          float: left;
+          height: 49x;
+          line-height: 49px;
+          font-size: 20px;
+          border-top: 2px solid #562916;
+          margin-top: -1px; }
+        .original_wrap .original .original_essay .essay_title a {
+          height: 49x;
+          line-height: 49px;
+          float: right;
+          display: block;
+          color: #a0a0a0;
+          padding-right: 10px;
+          background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+          .original_wrap .original .original_essay .essay_title a:hover {
+            color: #a66b42; }
+      .original_wrap .original .original_essay dl {
+        width: 400px; }
+        .original_wrap .original .original_essay dl dt {
+          font-size: 18px;
+          text-align: left;
+          background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+          padding-left: 20px;
+          line-height: 35px;
+          height: 35px;
+          overflow: hidden;
+          width: 380px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          display: block; }
+          .original_wrap .original .original_essay dl dt a {
+            font-size: 18px;
+            text-align: left;
+            font-weight: bold; }
+            .original_wrap .original .original_essay dl dt a:hover {
+              color: #996600; }
+        .original_wrap .original .original_essay dl dd {
+          font-size: 16px;
+          text-align: left;
+          background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+          padding-left: 20px;
+          line-height: 32px;
+          height: 32px;
+          overflow: hidden;
+          width: 340px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          display: block; }
+          .original_wrap .original .original_essay dl dd a {
+            font-size: 16px;
+            text-align: left; }
+            .original_wrap .original .original_essay dl dd a:hover {
+              color: #996600; }
+      .original_wrap .original .original_essay .hot_search {
+        margin-top: 40px;
+        position: relative; }
+        .original_wrap .original .original_essay .hot_search h5 {
+          position: absolute;
+          left: 10px;
+          top: -12px;
+          width: 75px;
+          height: 30px;
+          background-color: #fff;
+          font-size: 14px;
+          color: #959595;
+          text-align: center; }
+        .original_wrap .original .original_essay .hot_search .search_list {
+          width: 380px;
+          height: 111px;
+          padding: 15px 5px 0;
+          border: 1px solid #dcdcdc;
+          overflow: hidden; }
+          .original_wrap .original .original_essay .hot_search .search_list a {
+            display: block;
+            float: left;
+            line-height: 36px;
+            margin: 0 12px; }
+    .original_wrap .original .original_pic {
+      float: right;
+      width: 575px; }
+      .original_wrap .original .original_pic .pic_title {
+        width: 575px;
+        border-top: 1px solid  #e5e5e5; }
+        .original_wrap .original .original_pic .pic_title span {
+          display: block;
+          float: left;
+          height: 49x;
+          line-height: 49px;
+          font-size: 20px;
+          border-top: 2px solid #562916;
+          margin-top: -1px; }
+        .original_wrap .original .original_pic .pic_title a {
+          height: 49x;
+          line-height: 49px;
+          float: right;
+          display: block;
+          color: #a0a0a0;
+          padding-right: 10px;
+          background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+          .original_wrap .original .original_pic .pic_title a:hover {
+            color: #a66b42; }
+      .original_wrap .original .original_pic .pic_list {
+        width: 575px;
+        height: 561px;
+        overflow: hidden; }
+        .original_wrap .original .original_pic .pic_list ul {
+          width: 588px; }
+          .original_wrap .original .original_pic .pic_list ul .kind1 {
+            float: left;
+            width: 380px;
+            height: 273px;
+            margin-right: 15px;
+            margin-bottom: 15px; }
+            .original_wrap .original .original_pic .pic_list ul .kind1 a {
+              display: block;
+              width: 380px;
+              height: 273px;
+              position: relative; }
+              .original_wrap .original .original_pic .pic_list ul .kind1 a img {
+                width: 100%; }
+              .original_wrap .original .original_pic .pic_list ul .kind1 a p {
+                display: none;
+                width: 380px;
+                height: 273px;
+                background: url(http://www.xbiao.com/images/pc/2017/images-bg.png) repeat center center;
+                position: absolute;
+                top: 0;
+                left: 0; }
+                .original_wrap .original .original_pic .pic_list ul .kind1 a p span {
+                  position: absolute;
+                  top: 115px;
+                  left: 46px;
+                  width: 289px;
+                  height: 46px;
+                  font-size: 16px;
+                  line-height: 23px;
+                  color: #fff;
+                  text-align: center;
+                  background: url(http://www.xbiao.com/images/pc/2017/down-arr.png) no-repeat center 45px; }
+              .original_wrap .original .original_pic .pic_list ul .kind1 a:hover p {
+                display: block; }
+          .original_wrap .original .original_pic .pic_list ul .kind2 {
+            float: left;
+            width: 178px;
+            height: 273px;
+            margin-right: 15px;
+            margin-bottom: 15px; }
+            .original_wrap .original .original_pic .pic_list ul .kind2 a {
+              display: block;
+              width: 178px;
+              height: 273px;
+              position: relative; }
+              .original_wrap .original .original_pic .pic_list ul .kind2 a p {
+                display: none;
+                width: 178px;
+                height: 273px;
+                background: url(http://www.xbiao.com/images/pc/2017/images-bg.png) repeat center center;
+                position: absolute;
+                top: 0;
+                left: 0; }
+                .original_wrap .original .original_pic .pic_list ul .kind2 a p span {
+                  position: absolute;
+                  top: 115px;
+                  left: 22px;
+                  width: 134px;
+                  font-size: 16px;
+                  line-height: 23px;
+                  color: #fff;
+                  text-align: center; }
+                .original_wrap .original .original_pic .pic_list ul .kind2 a p em {
+                  position: absolute;
+                  top: 145px;
+                  left: 22px;
+                  display: block;
+                  width: 134px;
+                  height: 10px;
+                  background: url(http://www.xbiao.com/images/pc/2017/down-arr.png) no-repeat center bottom; }
+              .original_wrap .original .original_pic .pic_list ul .kind2 a:hover p {
+                display: block; }
+
 .watch_container {
   width: 100%; }
   .watch_container ul {
