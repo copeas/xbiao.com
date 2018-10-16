@@ -25,7 +25,7 @@ $.extend(ShopCar.prototype,{
         return $.ajax(opt);
     },
     renderPage:function(){
-         //console.log(this.json)
+         console.log(this.json)
         var html = "";
         for(var i = 0 ; i < this.json.length ; i ++){
             html += `<li>
@@ -316,4 +316,69 @@ $(function(){
         $(".hot_list1").toggle()
     })
 })
+/********毒物腕表************/
+function Skip(){
+} 
+$.extend(Skip.prototype,{
+    init:function(){
+        this.wrap = $(".random_list ul");
+        this.page_btn = $(".random_tit li");
+        this.now_page = 0;
+        this.loadJson()
+        .then(function(res){
+            //console.log(res);
+            this.json = res.subjects;
+            this.renderPage()
+        })
+        
+        this.bindEvent();
+    },
+    bindEvent:function(){
+        this.page_btn.click($.proxy(this.changePage , this));
+    },
+    loadJson:function(){
+        var opt = {
+            url:"http://localhost:82/proxy/api.douban.com/v2/movie/top250",
+            data:{start:0,count:250},
+            type:"GET",
+            context : this
+        }
+        return $.ajax(opt);;
+    },
+    renderPage(){
+        var list = this.json;
+        var html = "";
+        for(var i = 5 * this.now_page ; i <= 5* this.now_page + 4; i ++){
+            html += `
+                    <li>
+                        <figure>
+                            <section>
+                                <a href="javascript:void(0);">
+                                    <img src="${list[i].images.small}" alt="">
+                                </a>
+                            </section>
+                            <figcaption>
+                                    <a href="http://www.xbiao.com/iwc/43274/" target="_blank">${list[i].title}</a>
+                                    <span>¥${list[i].id}</span>
+                                    <i><img src="http://www.xbiao.com/images/pc/2017/heart.png">${list[i].year}人喜欢</i>
+                            </figcaption>
+                        </figure>
+                    </li>`
+        }
+        this.wrap.html(html);
+    },
+    changePage(){
+        //console.log("huanyiye")
+        if(this.now_page == 19){
+            this.now_page = 0
+        }else{
+            this.now_page++;
+        }
+        
+        this.renderPage();
+    }
+})
+var skip = new Skip();
+skip.init({
 
+});

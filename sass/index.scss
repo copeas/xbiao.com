@@ -642,7 +642,7 @@ header{
     width: 100%;
     .hot{
         width: 1000px;
-        margin: 0 auto 30px;
+        margin: 0 auto 15px;;
         .hot_left{
             float: left;
             .top{
@@ -883,6 +883,131 @@ header{
             }
         } 
     }  
+}
+/************毒物腕表***********/ 
+.random_wrap{
+    width: 100%;
+    .random{
+        width: 1000px;
+        margin:0 auto;
+        border: 1px solid #dcdcdc;
+        overflow: hidden;
+        margin-bottom: 30px;
+        border-top: 1px solid #2f190e;
+        dt{
+            padding: 0 15px 0 7px;
+            width: 978px;
+            height: 38px;
+            line-height: 38px;
+            background-color: #f6f6f8;
+            div{
+                float: left;
+                height: 38px;
+                h3{
+                    width: 64px;
+                    height: 38px;
+                    line-height: 38px;
+                    margin-right:14px;
+                    font-size: 16px; 
+                    float: left;
+                }
+                span{
+                    width: 84px;
+                    height: 38px;
+                    display: inline-block;
+                    line-height: 38px;
+                    font-size: 12px;
+                    color: #a0a0a0;
+                }
+            }
+            li{
+                float: right;
+                height: 38px;
+              a{
+                  display: block;
+                  width: 45px ; 
+                  float: left;
+                 
+                //   padding-right:15px; 
+                  font-style: normal;
+                  color: #562916;  
+                  &:hover{
+                      color:#996600;
+                  }              
+              }  
+              i{
+                width: 40px;
+                height: 38px;
+                display: inline-block; 
+                cursor: pointer; 
+                background: url(http://www.xbiao.com/images/pc/2017/change.png) no-repeat center center;
+              }
+            }
+        }
+        dd{
+           ul{
+               li{
+                float: left;
+                width: 199px;
+                height: 340px;
+                border-left: 1px solid #f4f4f4;
+                margin-left: -1px;
+                figure{
+                    width: 199px;
+                    height: 340px;
+                    section{
+                        width: 199px;
+                        height: 240px;
+                        margin: 6px 0; 
+                        a{
+                            display: block;
+                            margin: 0 19px;
+                            img{
+                                width: 160px;
+                                height: 240px;
+                            }
+                        }
+
+                    } 
+                    figcaption{
+                        width: 199px;
+                        a{  
+                            display: block;
+                            width: 100%;
+                            line-height: 18px;
+                            height: 36px;
+                            text-align: center;
+                            &:hover{
+                                color:#996600;
+                            }
+                        }
+                        span{
+                            display: block;
+                            text-align: center;
+                            color: #e60012;
+                            line-height: 22px;
+                            height: 22px;
+                            font-size: 12px;
+                        }
+                        i{
+                            display: block;
+                            height: 18px;
+                            line-height: 18px;
+                            text-align: center;
+                            font-style: normal;
+                            color: #a0a0a0;
+                            img{
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-top: -2px;  
+                            }
+                        }
+                    }
+                }
+               }
+           }        
+        }
+    }
 }
 //**********瀑布流********//
 
