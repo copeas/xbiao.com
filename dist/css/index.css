@@ -1044,6 +1044,94 @@ header {
               .original_wrap .original .original_pic .pic_list ul .kind2 a:hover p {
                 display: block; }
 
+/*****表主认证****/
+.watcher_wrap {
+  width: 100%; }
+  .watcher_wrap .watcher {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 7px 0;
+    background-color: #f6f6f8;
+    margin-bottom: 30px;
+    overflow: hidden; }
+    .watcher_wrap .watcher dt {
+      float: left;
+      padding-left: 10px;
+      width: 110px;
+      height: 90px;
+      padding-top: 4px;
+      background: #f6f6f8; }
+      .watcher_wrap .watcher dt span {
+        display: block;
+        font-size: 36px;
+        height: 40px;
+        line-height: 40px;
+        color: #e36a32;
+        text-align: center; }
+      .watcher_wrap .watcher dt i {
+        display: block;
+        font-size: 14px;
+        color: #959595;
+        font-style: normal;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: -3px; }
+      .watcher_wrap .watcher dt a {
+        display: block;
+        width: 85px;
+        height: 25px;
+        border-radius: 3px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: #562a16;
+        margin: 2px auto 0; }
+    .watcher_wrap .watcher dd {
+      float: left;
+      width: 188px;
+      height: 70px;
+      padding: 13px 15px 13px 17px;
+      background: #f6f6f8 url(http://www.xbiao.com/images/pc/2017/watcher-bar.png) repeat-y top right; }
+      .watcher_wrap .watcher dd .watcher-avatar {
+        float: left;
+        width: 70px;
+        height: 70px;
+        margin-right: 7px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .watcher_wrap .watcher dd .watcher-avatar img {
+          width: 100%; }
+      .watcher_wrap .watcher dd .watcher-info {
+        float: left;
+        width: 90px;
+        padding: 0 10px; }
+        .watcher_wrap .watcher dd .watcher-info span {
+          margin-top: -2px;
+          display: block;
+          height: 24px;
+          line-height: 24px;
+          font-size: 14px;
+          color: #959595;
+          overflow: hidden;
+          margin-top: -2px; }
+        .watcher_wrap .watcher dd .watcher-info i {
+          margin-top: -2px;
+          display: block;
+          width: 88px;
+          text-align: center;
+          height: 23px;
+          margin-top: 2px;
+          line-height: 23px;
+          font-size: 14px;
+          color: #562916;
+          font-style: normal;
+          border: 1px solid #dcdcdc;
+          border-radius: 3px; }
+          .watcher_wrap .watcher dd .watcher-info i:hover {
+            color: #996600; }
+
 .watch_container {
   width: 100%; }
   .watch_container ul {

@@ -1247,6 +1247,107 @@ header{
         }
     }
 } 
+/*****表主认证****/
+.watcher_wrap{
+    width: 100%;
+    .watcher{
+        width: 1000px;
+        
+        margin: 0 auto;
+        padding: 7px 0;
+        background-color: #f6f6f8;
+        margin-bottom: 30px;
+        overflow: hidden;
+        dt{
+            float: left;
+            padding-left: 10px;
+            width: 110px;
+            height: 90px;
+            padding-top: 4px;
+            background: #f6f6f8;
+            span{
+                display: block;
+                font-size: 36px;
+                height: 40px;
+                line-height: 40px;
+                color: #e36a32;
+                text-align: center;
+            }
+            i{
+                display: block;
+                font-size: 14px;
+                color: #959595;
+                font-style: normal;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                margin-top: -3px;
+            }
+            a{
+                display: block;
+                width: 85px;
+                height: 25px;
+                border-radius: 3px;
+                line-height: 25px;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                background-color: #562a16;
+                margin: 2px auto 0;  
+            }
+        }
+        dd{
+            float: left;
+            width: 188px;
+            height: 70px;
+            padding: 13px 15px 13px 17px;
+            background: #f6f6f8 url(http://www.xbiao.com/images/pc/2017/watcher-bar.png) repeat-y top right;
+            .watcher-avatar {
+                float: left;
+                width: 70px;
+                height: 70px;
+                margin-right: 7px;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                }
+            }
+            .watcher-info {
+                float: left;
+                width: 90px;
+                padding: 0 10px;
+                span {
+                    margin-top: -2px;
+                    display: block;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #959595;
+                    overflow: hidden;
+                    margin-top: -2px;
+                }
+                i {
+                    margin-top: -2px;
+                    display: block;
+                    width: 88px;
+                    text-align: center;
+                    height: 23px;
+                    margin-top: 2px;
+                    line-height: 23px;
+                    font-size: 14px;
+                    color: #562916;
+                    font-style: normal;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 3px;
+                    &:hover{
+                        color: #996600;
+                    }
+                }
+            }
+        }
+    }
+} 
 //**********瀑布流********//
 
 .watch_container{
