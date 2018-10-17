@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>腕表之家账户注册入口|腕表之家</title>
+    <title>腕表之家账户_用户登录|腕表之家</title>
     <link rel="stylesheet" href="css/sigin.css">
     
 </head>
@@ -44,43 +44,40 @@
                 </div>
                 <div class="login_right">
                     <div class="reg_nav clearfix">
-                        <a href="sigin.html" class=" left">登录腕表之家</a>
-                        <a href="register.html" class="act right">注册腕表之家</a>
-                    </div>
-                    <div class="telelphone">
-                        <div class="tel_icon">
-                            
-                        </div>
-                        <input class="reg_input" name="RegistrationForm[phone]" id="RegistrationForm_phone" type="text" maxlength="20" placeholder="手机号">
-                        <div class="error_prompt"></div>
+                        <a href="sigin.html" class="act left">登录腕表之家</a>
+                        <a href="register.html" class="right">注册腕表之家</a>
                     </div>
                     <div class="reg_item">
                         <div class="per_icon">
 
                         </div>
-                        <input class="reg_input" name="UserLogin[username]" id="UserLogin_username" type="text" placeholder="用户名">
+                        <input class="reg_input" name="UserLogin[username]" id="UserLogin_username" type="text" placeholder="手机号/邮箱/用户名">
                         <div class="error_prompt"></div>
                     </div>
                     <div class="lock_item">
                             <div class="lock_icon">
     
                             </div>
-                            <input class="reg_input" name="UserLogin[password]" id="UserLogin_password" type="password" placeholder="密码,4-16位数字/字母/特殊符号（空格除外）">
+                            <input class="reg_input" name="UserLogin[password]" id="UserLogin_password" type="password" placeholder="登录密码">
                             <div class="error_prompt"></div>
                     </div>
-                    <div class="lock_item">
-                            <div class="lock_icon">
-    
+                    <div class="reg_code ">
+                            <input class="reg_input error" name="UserLogin[verifyCode]" id="UserLogin_verifyCode" type="text" value="" placeholder="验证码 *">
+                            <div class="left verity_pic">
+                                <img alt="点击换图" title="点击换图" id="yw0" src="http://www.xbiao.com/user/captcha?v=5bc736a4cf827">
+                                <a id="yw0_button" href="/user/captcha?refresh=1">换一换</a>
                             </div>
-                            <input class="reg_input" name="UserLogin[password]" id="UserRlogin_password" type="password" placeholder="再次输入密码">
                             <div class="error_prompt"></div>
                     </div>
-                    <div class="reg_now">
-                        <button id="reg_btn">立即注册</button>
-                        <span>
-                            点击[注册]按钮，即代表你同意
-                            <a href="javascript:void(0)">《网站服务协议》</a>
-                        </span>                       
+                    <div class="btn_login">
+                        <a href="javascript:(0)" class="forget">忘记密码</a>
+                        <button id="lo_btn">登录</button>
+                        <div class="rember">
+                            <i>
+
+                            </i>
+                            <span class="autoLogin_bt" style="cursor:pointer;">下次自动登录<em>[为了您账号安全，请勿在公共上网环境下勾选此选项]</em></span>
+                        </div>
                     </div>
                 </div>
             </div>

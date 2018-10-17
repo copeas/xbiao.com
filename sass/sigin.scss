@@ -1,0 +1,360 @@
+@import "reset.scss";
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.wrap{
+    width: 100%;
+}
+header{    
+    border-bottom: 1px solid #d2d2d2;
+    background: #fff;
+    .head{
+        width: 1000px;
+        height: 93px;
+        margin: 0 auto;
+        .logo{
+            float: left;
+            margin-top:22px; 
+            width: 160px;
+            height: 49px;
+            background: url(http://www.xbiao.com/images/pc/pub/logo.jpg) 0 0 no-repeat;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .returnHome{
+            margin-top:57px; 
+           
+            float: right;
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            color: #535353;
+            background: url(http://www.xbiao.com/images/pc/pub/register_icon.png) 0 2px no-repeat;
+            padding-left: 25px;
+            &:hover{
+                color: #996600;
+            }
+        }
+
+    }
+}
+.bg{
+    height: 681px;
+    
+    background: url(http://www.xbiao.com/images/pc/pub/box_area.jpg) center 0 no-repeat;
+    overflow: hidden;
+    .login{
+        width: 1000px;
+        height: 540px;
+        margin: 70px auto 0;
+        background: url(http://www.xbiao.com/images/pc/pub/bg1.jpg) 0 0 no-repeat;
+    }
+    .reg_container{
+        width: 805px;
+        height: 490px;
+        padding: 50px 92px 0 103px;
+        .third_land{
+            float: left;
+            width: 300px;
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                color: #000;
+            }
+            ul{
+                margin-top: 38px;
+                li{
+                    float: left;
+                    width: 64px;
+                    text-align: center;
+                    a:hover {
+                        color: #996600;
+                        text-decoration: none;
+                    }
+                    i {
+                        display: block;
+                        width: 64px;
+                        height: 64px;
+                        background: url(http://www.xbiao.com/images/pc/pub/login_icon.png) no-repeat;
+                    }
+                    .thirdland_container li span {
+                        display: block;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000;
+                        margin-top: 10px;
+                    }
+                }
+                .qq,.weibo{
+                    margin-right: 53px;
+                }
+                .qq i{
+                    background-position: 0 0;
+                }
+                .weibo i{
+                    background-position: -64px 0;
+                }
+                .wchat i{
+                    background-position: -128px 0;
+                }
+            }
+        }
+        .login_right{
+            width: 325px;
+            float: right;
+            .reg_nav {
+                height: 37px;
+                border-bottom: 1px solid #74381e;
+                a {
+                    display: block;
+                    float: left;
+                    width: 162.5px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 18px;
+                    color: #000;
+                    text-align: center;
+                }
+                a.act {
+                    border-bottom: 2px solid #74381e;
+                }
+            }
+            .telelphone{
+                position: relative;
+                height: 35px; 
+                margin-top: 25px;
+                border: 1px solid #bbb;
+                padding-top:7px; 
+                .tel_icon{
+                    position: relative;
+                    width: 37px;
+                    height: 27px;
+                    border-right: 1px solid #eee;
+                    float: left;
+                    background: url(http://www.xbiao.com/images/pc/pub/register_icon.png) no-repeat;
+                    background-position: 11px -27px;
+                }
+                input{
+                    outline: none;
+                    width: 261px;
+                    height: 27px;
+                    padding: 0 12px;
+                    border: none;
+                    line-height: 27px;
+                    font-size: 12px;
+                    color: #000;
+                    overflow: hidden;
+                }
+                .error_prompt {
+                    position: absolute;
+                    bottom: -26px;
+                    left: 0;
+                    height: 25px;
+                    line-height: 25px;
+                    width: 325px;
+                    background: #fff;
+                    z-index: 3px;
+                }
+            }
+            .reg_item{
+                position: relative;
+                height: 35px; 
+                margin-top: 25px;
+                border: 1px solid #bbb;
+                padding-top:7px; 
+                .per_icon{
+                    position: relative;
+                    width: 37px;
+                    height: 27px;
+                    border-right: 1px solid #eee;
+                    float: left;
+                    background: url(http://www.xbiao.com/images/pc/pub/register_icon.png) no-repeat;
+                    background-position: 11px -95px;
+                }
+                input{
+                    outline: none;
+                    width: 261px;
+                    height: 27px;
+                    padding: 0 12px;
+                    border: none;
+                    line-height: 27px;
+                    font-size: 12px;
+                    color: #000;
+                    overflow: hidden;
+                }
+                .error_prompt {
+                    position: absolute;
+                    bottom: -26px;
+                    left: 0;
+                    height: 25px;
+                    line-height: 25px;
+                    width: 325px;
+                    background: #fff;
+                    z-index: 3px;
+                }
+            }
+            .lock_item{
+                position: relative;
+                height: 35px; 
+                margin-top: 26px;
+                border: 1px solid #bbb;
+                padding-top:7px; 
+                .lock_icon{
+                    position: relative;
+                    width: 37px;
+                    height: 27px;
+                    border-right: 1px solid #eee;
+                    float: left;
+                    background: url(http://www.xbiao.com/images/pc/pub/register_icon.png) no-repeat;
+                    background-position: 9px -158px;
+                }
+                input{
+                    outline: none;
+                    width: 261px;
+                    height: 27px;
+                    padding: 0 12px;
+                    border: none;
+                    line-height: 27px;
+                    font-size: 12px;
+                    color: #000;
+                    overflow: hidden;
+                }
+                .error_prompt {
+                    position: absolute;
+                    bottom: -26px;
+                    left: 0;
+                    height: 25px;
+                    line-height: 25px;
+                    width: 325px;
+                    background: #fff;
+                    z-index: 3px;
+                }
+            }
+            .reg_code{
+                position: relative;
+                /* height: 35px; */
+                margin-top: 25px;
+                input{
+                    width: 119px;
+                    height: 27px;
+                    padding: 0 7px;
+                    border: none;
+                    line-height: 27px;
+                    font-size: 12px;
+                    color: #000;
+                    overflow: hidden;
+                    outline: none;
+                    display: inline-block;
+                    border: 1px solid #bbb;
+                }
+                .left {
+                    float: right;
+                    img {
+                        float: left;
+                        height: 27px;
+                        margin: 4px 20px 4px 0;
+                        vertical-align: middle;
+                    }
+                    a{  
+                        
+                        font-size: 14px;
+                        color: #74381e;
+                        height: 27px;
+                        line-height: 27px;
+                    }
+                }
+                .error_prompt {
+                    position: absolute;
+                    bottom: -26px;
+                    left: 0;
+                    height: 25px;
+                    line-height: 25px;
+                    width: 325px;
+                    background: #fff;
+                    z-index: 3px;
+                }
+            }
+            .btn_login{
+                position: relative;
+                margin-top: 60px;
+                .forget{
+                    float: right;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #74381e;
+                    margin-bottom: 5px;
+                }
+                #lo_btn{
+                    display: block;
+                    width: 325px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    background: #74381e;
+                    font-size: 18px;
+                    color: #fff;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                }
+                .rember{
+                    position: relative;
+                    margin-top: 10px;
+                    width: 307px;
+                    overflow: hidden;
+                    line-height: 15px;
+                    padding-left: 18px;
+                    i{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 14px;
+                        height: 15px;
+                        background: url(http://www.xbiao.com/images/pc/pub/login_box.png) 0 0 no-repeat;
+                        cursor: pointer;
+                    }
+                    span {
+                        font-size: 12px;
+                        color: #000;
+                        em {
+                            font-size: 10px;
+                            color: #707070;
+                        }
+                    }
+                }
+            }
+            .reg_now{
+                margin-top: 30px;
+                #reg_btn{
+                    display: block;
+                    width: 325px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    background: #74381e;
+                    font-size: 18px;
+                    color: #fff;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                }
+                span{
+                    display: block;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #959595;
+                    width: 325px;
+                    text-align: center;
+                    margin-top: 4px;
+                    a{
+                        color: #74381e;
+                    }
+                }
+            }
+        }
+    }
+}
