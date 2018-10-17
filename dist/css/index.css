@@ -1132,6 +1132,395 @@ header {
           .watcher_wrap .watcher dd .watcher-info i:hover {
             color: #996600; }
 
+/********精选作业*************/
+.homework_wrap {
+  width: 100%; }
+  .homework_wrap .homework {
+    width: 1000px;
+    margin: 0 auto; }
+    .homework_wrap .homework .homework_left {
+      float: left;
+      width: 675px;
+      margin-bottom: 30px; }
+      .homework_wrap .homework .homework_left .tit {
+        height: 50px;
+        border-top: 1px solid #e5e5e5; }
+        .homework_wrap .homework .homework_left .tit em {
+          float: left;
+          font-size: 20px;
+          height: 49px;
+          line-height: 49px;
+          border-top: 2px solid #562916;
+          margin-top: -1px; }
+        .homework_wrap .homework .homework_left .tit span {
+          float: right;
+          font-size: 14px;
+          height: 50px;
+          line-height: 50px;
+          font-style: normal;
+          color: #a0a0a0; }
+          .homework_wrap .homework .homework_left .tit span a {
+            display: block;
+            color: #a0a0a0;
+            padding-right: 10px;
+            background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+            .homework_wrap .homework .homework_left .tit span a:hover {
+              color: #a66b42; }
+        .homework_wrap .homework .homework_left .tit .sub-tit {
+          float: right;
+          margin-right: 5px; }
+          .homework_wrap .homework .homework_left .tit .sub-tit ul li {
+            float: left;
+            height: 50px;
+            line-height: 50px;
+            margin-right: 15px;
+            font-size: 14px;
+            color: #562916; }
+            .homework_wrap .homework .homework_left .tit .sub-tit ul li a {
+              color: #562916; }
+              .homework_wrap .homework .homework_left .tit .sub-tit ul li a:hover {
+                color: #a66b42; }
+      .homework_wrap .homework .homework_left .buyer-left-list {
+        width: 675px;
+        height: 661px;
+        overflow: hidden; }
+        .homework_wrap .homework .homework_left .buyer-left-list ul {
+          display: block;
+          width: 690px;
+          height: 678px; }
+          .homework_wrap .homework .homework_left .buyer-left-list ul li {
+            float: left;
+            margin-right: 11px;
+            margin-bottom: 15px;
+            border: 1px solid #f6f6f8; }
+            .homework_wrap .homework .homework_left .buyer-left-list ul li span {
+              display: block;
+              width: 330px;
+              height: 245px;
+              overflow: hidden; }
+            .homework_wrap .homework .homework_left .buyer-left-list ul li em {
+              display: block;
+              padding: 11px 0;
+              background-color: #f6f6f8; }
+              .homework_wrap .homework .homework_left .buyer-left-list ul li em a {
+                width: 270px;
+                padding: 0px 30px;
+                display: block;
+                color: #000;
+                text-align: center;
+                height: 56px;
+                line-height: 28px;
+                overflow: hidden;
+                font-size: 18px;
+                background: #f6f6f8; }
+            .homework_wrap .homework .homework_left .buyer-left-list ul li:hover a {
+              color: #a66b42; }
+    .homework_wrap .homework .homework_right {
+      float: right;
+      background-color: #f6f6f8;
+      height: 711px; }
+      .homework_wrap .homework .homework_right .buyer-show {
+        background-color: #f6f6f8;
+        width: 300px;
+        height: 701px;
+        overflow: hidden; }
+        .homework_wrap .homework .homework_right .buyer-show dl dt {
+          width: 300px;
+          height: 50px;
+          background: url(http://www.xbiao.com/images/pc/2017/buyer-show.png) no-repeat 50% 25px; }
+        .homework_wrap .homework .homework_right .buyer-show dl dd {
+          padding: 0 14px;
+          background-color: #f6f6f8; }
+          .homework_wrap .homework .homework_right .buyer-show dl dd em {
+            display: block;
+            padding: 13px 0 13px;
+            background: url(http://www.xbiao.com/images/pc/2017/hot-border.png) repeat-x bottom center;
+            text-align: center; }
+            .homework_wrap .homework .homework_right .buyer-show dl dd em a {
+              display: block;
+              height: 56px;
+              line-height: 28px;
+              overflow: hidden;
+              font-size: 18px; }
+              .homework_wrap .homework .homework_right .buyer-show dl dd em a:hover {
+                color: #996600; }
+
+/*********腕表行情**********/
+.market_wrap {
+  width: 100%; }
+  .market_wrap .market {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .market_wrap .market .market-left {
+      float: left; }
+      .market_wrap .market .market-left .watch-market {
+        width: 375px;
+        float: left;
+        margin-right: 25px; }
+        .market_wrap .market .market-left .watch-market .tit {
+          height: 50px;
+          border-top: 1px solid #e5e5e5; }
+          .market_wrap .market .market-left .watch-market .tit em {
+            float: left;
+            font-size: 20px;
+            height: 49px;
+            line-height: 49px;
+            border-top: 2px solid #562916;
+            margin-top: -1px; }
+          .market_wrap .market .market-left .watch-market .tit span {
+            float: right;
+            font-size: 14px;
+            height: 50px;
+            line-height: 50px;
+            font-style: normal;
+            color: #a0a0a0; }
+            .market_wrap .market .market-left .watch-market .tit span a {
+              display: block;
+              color: #a0a0a0;
+              padding-right: 10px;
+              background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+              .market_wrap .market .market-left .watch-market .tit span a:hover {
+                color: #996600; }
+        .market_wrap .market .market-left .watch-market .pic-txt {
+          width: 375px;
+          height: 173px;
+          overflow: hidden;
+          margin-bottom: 7px; }
+          .market_wrap .market .market-left .watch-market .pic-txt ul {
+            display: block;
+            width: 390px;
+            height: 175px; }
+            .market_wrap .market .market-left .watch-market .pic-txt ul li {
+              float: left;
+              margin-right: 11px;
+              margin-bottom: 15px;
+              border: 1px solid #f6f6f8; }
+              .market_wrap .market .market-left .watch-market .pic-txt ul li span {
+                display: block;
+                width: 180px;
+                height: 115px;
+                overflow: hidden; }
+              .market_wrap .market .market-left .watch-market .pic-txt ul li em {
+                display: block;
+                padding: 7px 0;
+                background-color: #f6f6f8; }
+                .market_wrap .market .market-left .watch-market .pic-txt ul li em a {
+                  width: 160px;
+                  overflow: hidden;
+                  padding: 0px 10px;
+                  display: block;
+                  color: #000;
+                  text-align: center;
+                  height: 44px;
+                  line-height: 22px;
+                  overflow: hidden;
+                  font-size: 14px;
+                  background: #f6f6f8; }
+                  .market_wrap .market .market-left .watch-market .pic-txt ul li em a:hover {
+                    color: #996600; }
+        .market_wrap .market .market-left .watch-market .art-list {
+          margin-bottom: 16px; }
+          .market_wrap .market .market-left .watch-market .art-list dl dt {
+            font-size: 18px;
+            text-align: left;
+            background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+            padding-left: 20px;
+            line-height: 35px;
+            height: 35px;
+            overflow: hidden;
+            width: 355px;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block; }
+            .market_wrap .market .market-left .watch-market .art-list dl dt a:hover {
+              color: #996600; }
+          .market_wrap .market .market-left .watch-market .art-list dl dd {
+            font-size: 16px;
+            text-align: left;
+            background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+            padding-left: 20px;
+            line-height: 32px;
+            height: 32px;
+            overflow: hidden;
+            width: 355px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block; }
+            .market_wrap .market .market-left .watch-market .art-list dl dd a:hover {
+              color: #996600; }
+      .market_wrap .market .market-left .guide {
+        width: 375px;
+        float: left; }
+        .market_wrap .market .market-left .guide .tit {
+          height: 50px;
+          border-top: 1px solid #e5e5e5;
+          /* overflow: hidden; */ }
+          .market_wrap .market .market-left .guide .tit em {
+            float: left;
+            font-size: 20px;
+            height: 49px;
+            line-height: 49px;
+            border-top: 2px solid #562916;
+            margin-top: -1px; }
+          .market_wrap .market .market-left .guide .tit span {
+            float: right;
+            font-size: 14px;
+            height: 50px;
+            line-height: 50px;
+            font-style: normal;
+            color: #a0a0a0; }
+            .market_wrap .market .market-left .guide .tit span a {
+              display: block;
+              color: #a0a0a0;
+              padding-right: 10px;
+              background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+              .market_wrap .market .market-left .guide .tit span a:hover {
+                color: #996600; }
+          .market_wrap .market .market-left .guide .tit .sub-tit {
+            float: right;
+            margin-right: 5px; }
+            .market_wrap .market .market-left .guide .tit .sub-tit ul li {
+              float: left;
+              height: 50px;
+              line-height: 50px;
+              margin-right: 15px;
+              font-size: 14px;
+              color: #562916; }
+              .market_wrap .market .market-left .guide .tit .sub-tit ul li a {
+                color: #562916; }
+                .market_wrap .market .market-left .guide .tit .sub-tit ul li a:hover {
+                  color: #996600; }
+        .market_wrap .market .market-left .guide .pic-txt {
+          width: 375px;
+          height: 173px;
+          overflow: hidden;
+          margin-bottom: 7px; }
+          .market_wrap .market .market-left .guide .pic-txt ul {
+            display: block;
+            width: 390px;
+            height: 175px; }
+            .market_wrap .market .market-left .guide .pic-txt ul li {
+              float: left;
+              margin-right: 11px;
+              margin-bottom: 15px;
+              border: 1px solid #f6f6f8; }
+              .market_wrap .market .market-left .guide .pic-txt ul li span {
+                display: block;
+                width: 180px;
+                height: 115px;
+                overflow: hidden; }
+              .market_wrap .market .market-left .guide .pic-txt ul li em {
+                display: block;
+                padding: 7px 0;
+                background-color: #f6f6f8; }
+                .market_wrap .market .market-left .guide .pic-txt ul li em a {
+                  width: 160px;
+                  overflow: hidden;
+                  padding: 0px 10px;
+                  display: block;
+                  color: #000;
+                  text-align: center;
+                  height: 44px;
+                  line-height: 22px;
+                  overflow: hidden;
+                  font-size: 14px;
+                  background: #f6f6f8; }
+                  .market_wrap .market .market-left .guide .pic-txt ul li em a:hover {
+                    color: #996600; }
+        .market_wrap .market .market-left .guide .art-list {
+          margin-bottom: 16px; }
+          .market_wrap .market .market-left .guide .art-list dl dt {
+            font-size: 18px;
+            text-align: left;
+            background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+            padding-left: 20px;
+            line-height: 35px;
+            height: 35px;
+            overflow: hidden;
+            width: 355px;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block; }
+            .market_wrap .market .market-left .guide .art-list dl dt a:hover {
+              color: #996600; }
+          .market_wrap .market .market-left .guide .art-list dl dd {
+            font-size: 16px;
+            text-align: left;
+            background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+            padding-left: 20px;
+            line-height: 32px;
+            height: 32px;
+            overflow: hidden;
+            width: 355px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block; }
+            .market_wrap .market .market-left .guide .art-list dl dd a:hover {
+              color: #996600; }
+      .market_wrap .market .market-left .ad775x100 {
+        width: 775px;
+        height: 100px;
+        clear: both; }
+    .market_wrap .market .market-right {
+      float: right; }
+      .market_wrap .market .market-right .select-watch {
+        width: 200px;
+        height: 540px;
+        border: 1px solid #e5e5e5;
+        overflow: hidden;
+        margin-bottom: 30px; }
+        .market_wrap .market .market-right .select-watch dl dt {
+          width: 170px;
+          padding: 0 15px;
+          height: 37px;
+          background-color: #f6f6f8; }
+          .market_wrap .market .market-right .select-watch dl dt em {
+            height: 37px;
+            line-height: 37px;
+            font-size: 16px;
+            color: #000; }
+          .market_wrap .market .market-right .select-watch dl dt i {
+            color: #a0a0a0;
+            font-size: 12px;
+            height: 37px;
+            line-height: 37px;
+            font-style: normal;
+            padding-left: 10px; }
+        .market_wrap .market .market-right .select-watch dl dd {
+          float: left;
+          width: 100px;
+          height: 46px;
+          padding-top: 10px;
+          margin-left: -1px;
+          float: left;
+          background: url(http://www.xbiao.com/images/pc/2017/select-watch-bg.png) no-repeat 0 0; }
+          .market_wrap .market .market-right .select-watch dl dd a {
+            display: block;
+            text-align: center; }
+            .market_wrap .market .market-right .select-watch dl dd a em {
+              display: block;
+              text-align: center;
+              height: 22px;
+              line-height: 22px;
+              font-size: 14px;
+              color: #000; }
+              .market_wrap .market .market-right .select-watch dl dd a em:hover {
+                color: #996600; }
+            .market_wrap .market .market-right .select-watch dl dd a i {
+              display: block;
+              text-align: center;
+              color: #a0a0a0;
+              font-size: 12px;
+              height: 18px;
+              line-height: 18px;
+              font-style: normal; }
+
 .watch_container {
   width: 100%; }
   .watch_container ul {
