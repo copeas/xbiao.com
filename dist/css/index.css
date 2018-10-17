@@ -1521,6 +1521,814 @@ header {
               line-height: 18px;
               font-style: normal; }
 
+/********论坛*******/
+.watch_bbs {
+  width: 100%; }
+  .watch_bbs .bbs {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .watch_bbs .bbs .bbs-left {
+      float: left;
+      width: 776px; }
+      .watch_bbs .bbs .bbs-left .tit {
+        height: 50px;
+        border-top: 1px solid #e5e5e5;
+        /* overflow: hidden; */ }
+        .watch_bbs .bbs .bbs-left .tit em {
+          float: left;
+          font-size: 20px;
+          height: 49px;
+          line-height: 49px;
+          border-top: 2px solid #562916;
+          margin-top: -1px; }
+        .watch_bbs .bbs .bbs-left .tit span {
+          float: right;
+          font-size: 14px;
+          height: 50px;
+          line-height: 50px;
+          font-style: normal;
+          color: #a0a0a0; }
+          .watch_bbs .bbs .bbs-left .tit span a {
+            display: block;
+            color: #a0a0a0;
+            padding-right: 10px;
+            background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+            .watch_bbs .bbs .bbs-left .tit span a:hover {
+              color: #996600; }
+        .watch_bbs .bbs .bbs-left .tit .sub-tit {
+          float: right;
+          margin-right: 5px; }
+          .watch_bbs .bbs .bbs-left .tit .sub-tit li {
+            float: left;
+            height: 50px;
+            line-height: 50px;
+            margin-right: 15px;
+            font-size: 14px;
+            color: #562916; }
+            .watch_bbs .bbs .bbs-left .tit .sub-tit li a {
+              color: #562916; }
+              .watch_bbs .bbs .bbs-left .tit .sub-tit li a:hover {
+                color: #996600; }
+      .watch_bbs .bbs .bbs-left .bbs-main-pic {
+        float: left;
+        position: relative;
+        width: 300px;
+        height: 450px;
+        border: 1px solid #f6f6f8;
+        overflow: hidden; }
+        .watch_bbs .bbs .bbs-left .bbs-main-pic em {
+          position: absolute;
+          left: 0;
+          bottom: 0; }
+          .watch_bbs .bbs .bbs-left .bbs-main-pic em a {
+            display: block;
+            width: 240px;
+            padding: 0 30px;
+            text-align: center;
+            height: 40px;
+            padding-top: 20px;
+            line-height: 40px;
+            font-size: 18px;
+            color: #fff;
+            background: url(http://www.xbiao.com/images/pc/2017/hot-pic-bg.png) repeat-x 0 0; }
+            .watch_bbs .bbs .bbs-left .bbs-main-pic em a:hover {
+              color: #996600; }
+      .watch_bbs .bbs .bbs-left .bbs-sub-pic {
+        float: right;
+        width: 450px;
+        height: 450px;
+        overflow: hidden; }
+        .watch_bbs .bbs .bbs-left .bbs-sub-pic ul {
+          margin-top: -15px; }
+          .watch_bbs .bbs .bbs-left .bbs-sub-pic ul .bbs-post {
+            width: 450px;
+            overflow: hidden;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e5e5e5; }
+            .watch_bbs .bbs .bbs-left .bbs-sub-pic ul .bbs-post dl {
+              width: 465px; }
+              .watch_bbs .bbs .bbs-left .bbs-sub-pic ul .bbs-post dl dt {
+                float: left;
+                width: 450px;
+                height: 43px; }
+                .watch_bbs .bbs .bbs-left .bbs-sub-pic ul .bbs-post dl dt em {
+                  float: left;
+                  height: 43px;
+                  width: 375px;
+                  line-height: 43px;
+                  font-size: 16px;
+                  color: #000;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  display: block; }
+                  .watch_bbs .bbs .bbs-left .bbs-sub-pic ul .bbs-post dl dt em:hover {
+                    color: #996600; }
+                .watch_bbs .bbs .bbs-left .bbs-sub-pic ul .bbs-post dl dt i {
+                  float: right;
+                  padding-left: 15px;
+                  height: 43px;
+                  line-height: 43px;
+                  font-size: 12px;
+                  color: #959595;
+                  font-style: normal;
+                  background: url(http://www.xbiao.com/images/pc/2017/icon-comment.png) no-repeat center left; }
+              .watch_bbs .bbs .bbs-left .bbs-sub-pic ul .bbs-post dl dd {
+                float: left;
+                width: 140px;
+                height: 102px;
+                margin-right: 15px;
+                overflow: hidden; }
+    .watch_bbs .bbs .bbs-right {
+      float: right;
+      width: 198px;
+      height: 500px;
+      overflow: hidden;
+      border: 1px solid #e5e5e5;
+      border-top: 0px; }
+      .watch_bbs .bbs .bbs-right .bbs-nav {
+        width: 198px;
+        overflow: hidden; }
+        .watch_bbs .bbs .bbs-right .bbs-nav li {
+          float: left;
+          width: 97px;
+          background-color: #f6f6f8;
+          cursor: pointer;
+          border: 1px solid #e5e5e5;
+          font-size: 16px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: #313131; }
+        .watch_bbs .bbs .bbs-right .bbs-nav li.act {
+          background-color: #ffffff;
+          border-left: 1px solid #fff;
+          border-right: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          border-top: 1px solid #562916; }
+      .watch_bbs .bbs .bbs-right .bbs-cont {
+        width: 168px;
+        margin: 0 auto;
+        overflow: hidden; }
+        .watch_bbs .bbs .bbs-right .bbs-cont ul {
+          margin-top: -1px; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li {
+            display: block;
+            padding: 6px 0 4px;
+            background: url(http://www.xbiao.com/images/pc/2017/hot-border.png) repeat-x 0 0; }
+            .watch_bbs .bbs .bbs-right .bbs-cont ul li em {
+              text-indent: 30px;
+              display: block;
+              font-size: 14px;
+              line-height: 26px;
+              background-image: url(http://www.xbiao.com/images/pc/2017/number.png);
+              background-repeat: no-repeat; }
+              .watch_bbs .bbs .bbs-right .bbs-cont ul li em a:hover {
+                color: #996600; }
+            .watch_bbs .bbs .bbs-right .bbs-cont ul li span {
+              text-indent: 30px;
+              display: block;
+              font-size: 14px;
+              line-height: 20px;
+              color: #a0a0a0; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li.no1 em {
+            background-position: 8px 6px; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li.no2 em {
+            background-position: 8px -50px; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li.no3 em {
+            background-position: 8px -106px; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li.no4 em {
+            background-position: 8px -164px; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li.no5 em {
+            background-position: 8px -220px; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li.no6 em {
+            background-position: 8px -275px; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li.no7 em {
+            background-position: 8px -335px; }
+          .watch_bbs .bbs .bbs-right .bbs-cont ul li.no8 em {
+            background-position: 8px -390px; }
+        .watch_bbs .bbs .bbs-right .bbs-cont .bbs-star {
+          margin-top: 11px;
+          overflow: hidden; }
+          .watch_bbs .bbs .bbs-right .bbs-cont .bbs-star ol {
+            margin-top: -1px; }
+            .watch_bbs .bbs .bbs-right .bbs-cont .bbs-star ol li {
+              padding: 11px 0 10px;
+              overflow: hidden;
+              position: relative;
+              background: url(http://www.xbiao.com/images/pc/2017/hot-border.png) repeat-x 0 0; }
+              .watch_bbs .bbs .bbs-right .bbs-cont .bbs-star ol li .star-avatar {
+                float: left;
+                margin-right: 10px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden; }
+              .watch_bbs .bbs .bbs-right .bbs-cont .bbs-star ol li em {
+                display: block;
+                font-size: 14px;
+                color: #000;
+                height: 20px;
+                overflow: hidden;
+                line-height: 20px; }
+              .watch_bbs .bbs .bbs-right .bbs-cont .bbs-star ol li span {
+                display: block;
+                font-size: 12px;
+                color: #a0a0a0;
+                height: 15px;
+                overflow: hidden;
+                line-height: 15px; }
+              .watch_bbs .bbs .bbs-right .bbs-cont .bbs-star ol li i {
+                display: block;
+                font-style: normal;
+                font-size: 12px;
+                color: #562916;
+                line-height: 15px; }
+              .watch_bbs .bbs .bbs-right .bbs-cont .bbs-star ol li .cover {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0; }
+
+/********资深表友***********/
+.deep_wrap {
+  width: 100%; }
+  .deep_wrap .deep {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .deep_wrap .deep .deep-watcher {
+      float: left;
+      width: 550px;
+      height: 214px;
+      border: 1px solid #e5e5e5;
+      overflow: hidden; }
+      .deep_wrap .deep .deep-watcher .title {
+        padding: 0 15px 0 7px;
+        height: 38px;
+        line-height: 38px;
+        background-color: #f6f6f8; }
+        .deep_wrap .deep .deep-watcher .title .title-left {
+          float: left;
+          overflow: hidden; }
+          .deep_wrap .deep .deep-watcher .title .title-left em {
+            float: left;
+            margin-right: 4px;
+            font-size: 16px;
+            color: #000; }
+          .deep_wrap .deep .deep-watcher .title .title-left span {
+            float: left;
+            font-size: 12px;
+            color: #a0a0a0;
+            margin-left: 5px; }
+        .deep_wrap .deep .deep-watcher .title .title-right {
+          float: right; }
+          .deep_wrap .deep .deep-watcher .title .title-right .title-change {
+            display: block;
+            height: 38px;
+            line-height: 38px;
+            cursor: pointer;
+            padding-right: 30px;
+            font-style: normal;
+            color: #562916;
+            background: url(http://www.xbiao.com/images/pc/2017/change.png) no-repeat center right; }
+      .deep_wrap .deep .deep-watcher .deep-watcher-list {
+        padding: 0 5px; }
+        .deep_wrap .deep .deep-watcher .deep-watcher-list ul li {
+          float: left;
+          width: 162px;
+          height: 70px;
+          padding: 9px 0 9px 18px; }
+          .deep_wrap .deep .deep-watcher .deep-watcher-list ul li .deep-watcher-avatar {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-right: 2px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 10px; }
+          .deep_wrap .deep .deep-watcher .deep-watcher-list ul li .deep-watcher-info {
+            float: left;
+            width: 90px;
+            padding: 0 10px; }
+            .deep_wrap .deep .deep-watcher .deep-watcher-list ul li .deep-watcher-info em {
+              display: block;
+              height: 20px;
+              line-height: 20px;
+              font-size: 15px;
+              color: #000;
+              overflow: hidden; }
+              .deep_wrap .deep .deep-watcher .deep-watcher-list ul li .deep-watcher-info em:hover {
+                color: #996600; }
+            .deep_wrap .deep .deep-watcher .deep-watcher-list ul li .deep-watcher-info span {
+              display: block;
+              height: 20px;
+              line-height: 20px;
+              font-size: 12px;
+              color: #959595;
+              overflow: hidden;
+              margin-top: -2px; }
+            .deep_wrap .deep .deep-watcher .deep-watcher-list ul li .deep-watcher-info i {
+              display: block;
+              width: 75px;
+              text-align: center;
+              height: 20px;
+              line-height: 20px;
+              font-size: 12px;
+              color: #000;
+              background-color: #f6f6f8;
+              font-style: normal;
+              border: 1px solid #eeeeee;
+              border-radius: 3px;
+              margin-top: 2px; }
+              .deep_wrap .deep .deep-watcher .deep-watcher-list ul li .deep-watcher-info i:hover {
+                color: #996600; }
+    .deep_wrap .deep .lastest-answer {
+      float: right;
+      width: 420px;
+      border: 1px solid #e5e5e5;
+      overflow: hidden; }
+      .deep_wrap .deep .lastest-answer .title {
+        padding: 0 15px 0 7px;
+        height: 38px;
+        line-height: 38px;
+        background-color: #f6f6f8; }
+        .deep_wrap .deep .lastest-answer .title .title-left {
+          float: left;
+          overflow: hidden; }
+          .deep_wrap .deep .lastest-answer .title .title-left em {
+            float: left;
+            margin-right: 4px;
+            font-size: 16px;
+            color: #000; }
+          .deep_wrap .deep .lastest-answer .title .title-left span {
+            float: left;
+            font-size: 12px;
+            color: #a0a0a0;
+            margin-left: 5px; }
+            .deep_wrap .deep .lastest-answer .title .title-left span i {
+              font-size: 12px;
+              color: #f00;
+              font-style: normal; }
+        .deep_wrap .deep .lastest-answer .title .title-right {
+          float: right; }
+          .deep_wrap .deep .lastest-answer .title .title-right .title-change {
+            display: block;
+            height: 38px;
+            line-height: 38px;
+            cursor: pointer;
+            padding-right: 30px;
+            font-style: normal;
+            color: #562916;
+            background: url(http://www.xbiao.com/images/pc/2017/change.png) no-repeat center right; }
+      .deep_wrap .deep .lastest-answer .lastest-list {
+        padding: 8px 0; }
+        .deep_wrap .deep .lastest-answer .lastest-list ul li {
+          overflow: hidden;
+          padding: 0 10px; }
+          .deep_wrap .deep .lastest-answer .lastest-list ul li em {
+            float: left;
+            font-size: 15px;
+            text-align: left;
+            background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 8px center;
+            padding-left: 20px;
+            line-height: 32px;
+            height: 32px;
+            overflow: hidden;
+            width: 320px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block; }
+            .deep_wrap .deep .lastest-answer .lastest-list ul li em a:hover {
+              color: #996600; }
+          .deep_wrap .deep .lastest-answer .lastest-list ul li span {
+            float: right;
+            font-size: 12px;
+            color: #959595;
+            line-height: 32px;
+            height: 32px; }
+            .deep_wrap .deep .lastest-answer .lastest-list ul li span i {
+              font-style: normal;
+              color: #e60012; }
+
+.live_wrap {
+  width: 100%; }
+  .live_wrap .live_report {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .live_wrap .live_report .tit {
+      height: 50px;
+      border-top: 1px solid #e5e5e5; }
+      .live_wrap .live_report .tit em {
+        float: left;
+        font-size: 20px;
+        height: 49px;
+        line-height: 49px;
+        border-top: 2px solid #562916;
+        margin-top: -1px; }
+      .live_wrap .live_report .tit span {
+        float: right;
+        font-size: 14px;
+        height: 50px;
+        line-height: 50px;
+        font-style: normal;
+        color: #a0a0a0; }
+        .live_wrap .live_report .tit span a {
+          display: block;
+          color: #a0a0a0;
+          padding-right: 10px;
+          background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+          .live_wrap .live_report .tit span a:hover {
+            color: #996600; }
+    .live_wrap .live_report .scene_box {
+      width: 1000px;
+      height: 420px;
+      overflow: hidden; }
+      .live_wrap .live_report .scene_box .main_box {
+        float: left;
+        position: relative;
+        width: 680px;
+        height: 420px;
+        overflow: hidden; }
+        .live_wrap .live_report .scene_box .main_box a {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 680px;
+          height: 420px; }
+          .live_wrap .live_report .scene_box .main_box a img {
+            width: 680px;
+            height: 420px; }
+      .live_wrap .live_report .scene_box .sub_box {
+        float: right;
+        width: 320px;
+        height: 420px;
+        background: #313131; }
+        .live_wrap .live_report .scene_box .sub_box .sub_item {
+          position: relative;
+          height: 102px;
+          width: 182px;
+          padding: 0 8px 0 130px;
+          border-top: 1px solid #434343;
+          border-bottom: 1px solid #1d1d1d;
+          overflow: hidden;
+          cursor: pointer; }
+          .live_wrap .live_report .scene_box .sub_box .sub_item .sub_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #dcdcdc;
+            opacity: .5;
+            display: none; }
+          .live_wrap .live_report .scene_box .sub_box .sub_item dt {
+            position: absolute;
+            top: 14px;
+            left: 13px;
+            width: 105px;
+            height: 77px;
+            overflow: hidden; }
+          .live_wrap .live_report .scene_box .sub_box .sub_item .scene_title {
+            position: relative;
+            font-size: 14px;
+            line-height: 24px;
+            height: 48px;
+            overflow: hidden;
+            color: #dcdcdc;
+            word-break: break-all;
+            margin-top: 10px; }
+          .live_wrap .live_report .scene_box .sub_box .sub_item .scene_note {
+            height: 24px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #a0a0a0;
+            overflow: hidden; }
+        .live_wrap .live_report .scene_box .sub_box dl.act .sub_bg {
+          display: block; }
+
+/******* 品牌资讯 ********/
+.brand_news_wrap {
+  width: 100%; }
+  .brand_news_wrap .brand_news {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .brand_news_wrap .brand_news .brand-news-left {
+      float: left;
+      width: 780px; }
+      .brand_news_wrap .brand_news .brand-news-left .tit {
+        height: 50px;
+        border-top: 1px solid #e5e5e5;
+        /* overflow: hidden; */ }
+        .brand_news_wrap .brand_news .brand-news-left .tit em {
+          float: left;
+          font-size: 20px;
+          height: 49px;
+          line-height: 49px;
+          border-top: 2px solid #562916;
+          margin-top: -1px; }
+      .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left {
+        float: left; }
+        .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-pic {
+          position: relative;
+          width: 335px;
+          height: 215px;
+          overflow: hidden;
+          margin-bottom: 15px;
+          border: 1px solid #f6f6f8; }
+          .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-pic em {
+            position: absolute;
+            left: 0;
+            bottom: 0; }
+            .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-pic em a {
+              display: block;
+              width: 275px;
+              padding: 0 30px;
+              text-align: center;
+              height: 40px;
+              padding-top: 20px;
+              line-height: 40px;
+              font-size: 18px;
+              color: #fff;
+              background: url(http://www.xbiao.com/images/pc/2017/hot-pic-bg.png) repeat-x 0 0; }
+              .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-pic em a:hover {
+                color: #996600; }
+        .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-txt {
+          width: 335px;
+          height: 153px;
+          overflow: hidden; }
+          .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-txt ul {
+            display: block;
+            width: 350px;
+            height: 155px; }
+            .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-txt ul li {
+              float: left;
+              margin-right: 11px;
+              margin-bottom: 15px;
+              border: 1px solid #f6f6f8; }
+              .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-txt ul li span {
+                display: block;
+                width: 160px;
+                height: 103px;
+                overflow: hidden; }
+                .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-txt ul li span a:hover {
+                  color: #996600;
+                  text-decoration: none; }
+              .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-txt ul li em {
+                display: block;
+                padding: 3px 0;
+                background-color: #f6f6f8; }
+                .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-txt ul li em a {
+                  width: 140px;
+                  overflow: hidden;
+                  padding: 0px 10px;
+                  display: block;
+                  color: #000;
+                  text-align: center;
+                  height: 44px;
+                  line-height: 22px;
+                  overflow: hidden;
+                  font-size: 14px;
+                  background: #f6f6f8; }
+                  .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-left .brand-main-txt ul li em a:hover {
+                    color: #996600;
+                    text-decoration: none; }
+      .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-right {
+        float: left;
+        margin-left: 13px;
+        height: 383px;
+        overflow: hidden; }
+        .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-right a:hover {
+          color: #996600; }
+        .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-right .brand-art-list-wrap {
+          margin-top: -8px; }
+          .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-right .brand-art-list-wrap .brand-art-list {
+            margin-bottom: 6px; }
+            .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-right .brand-art-list-wrap .brand-art-list dt {
+              font-size: 18px;
+              text-align: left;
+              background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+              padding-left: 20px;
+              line-height: 35px;
+              height: 35px;
+              overflow: hidden;
+              width: 410px;
+              font-weight: bold;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              display: block; }
+            .brand_news_wrap .brand_news .brand-news-left .brand-news-cont .brand-news-cont-right .brand-art-list-wrap .brand-art-list dd {
+              font-size: 16px;
+              text-align: left;
+              background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+              padding-left: 20px;
+              line-height: 32px;
+              height: 32px;
+              width: 390px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              display: block; }
+    .brand_news_wrap .brand_news .watch-top {
+      float: right;
+      width: 198px;
+      height: 435px;
+      overflow: hidden;
+      border: 1px solid #e5e5e5;
+      border-top: 0px; }
+      .brand_news_wrap .brand_news .watch-top .watch-nav {
+        width: 198px;
+        overflow: hidden; }
+        .brand_news_wrap .brand_news .watch-top .watch-nav ul {
+          width: 200px;
+          margin-left: -1px; }
+          .brand_news_wrap .brand_news .watch-top .watch-nav ul li {
+            float: left;
+            width: 98px;
+            background-color: #f6f6f8;
+            cursor: pointer;
+            border: 1px solid #e5e5e5;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #313131;
+            font-size: 16px; }
+          .brand_news_wrap .brand_news .watch-top .watch-nav ul li.act {
+            background-color: #ffffff;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-top: 1px solid #562916; }
+      .brand_news_wrap .brand_news .watch-top .watch-cont {
+        width: 168px;
+        margin: 0 auto;
+        overflow: hidden; }
+        .brand_news_wrap .brand_news .watch-top .watch-cont ul {
+          margin-top: -1px; }
+          .brand_news_wrap .brand_news .watch-top .watch-cont ul li {
+            display: block;
+            padding: 3px 0 3px;
+            background: url(http://www.xbiao.com/images/pc/2017/hot-border.png) repeat-x 0 0; }
+            .brand_news_wrap .brand_news .watch-top .watch-cont ul li em {
+              width: 100%;
+              text-indent: 30px;
+              display: block;
+              font-size: 12px;
+              line-height: 26px;
+              height: 26px;
+              background-image: url(http://www.xbiao.com/images/pc/2017/number.png);
+              background-repeat: no-repeat;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              display: block; }
+            .brand_news_wrap .brand_news .watch-top .watch-cont ul li span {
+              width: 100%;
+              text-indent: 30px;
+              display: block;
+              font-size: 12px;
+              line-height: 16px;
+              height: 16px;
+              margin-top: -6px;
+              color: #000;
+              margin-bottom: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              display: block; }
+            .brand_news_wrap .brand_news .watch-top .watch-cont ul li .watch-img {
+              display: none;
+              width: 100px;
+              height: 145px;
+              margin: 0 auto; }
+          .brand_news_wrap .brand_news .watch-top .watch-cont ul li.no1 em {
+            background-position: 8px 6px; }
+          .brand_news_wrap .brand_news .watch-top .watch-cont ul li.no2 em {
+            background-position: 8px -50px; }
+          .brand_news_wrap .brand_news .watch-top .watch-cont ul li.no3 em {
+            background-position: 8px -106px; }
+          .brand_news_wrap .brand_news .watch-top .watch-cont ul li.no4 em {
+            background-position: 8px -164px; }
+          .brand_news_wrap .brand_news .watch-top .watch-cont ul li.no5 em {
+            background-position: 8px -220px; }
+
+/********人物访谈**********/
+.person_wrap {
+  width: 100%; }
+  .person_wrap .person {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .person_wrap .person .person-left {
+      float: left;
+      width: 645px; }
+      .person_wrap .person .person-left .tit {
+        height: 50px;
+        border-top: 1px solid #e5e5e5;
+        /* overflow: hidden; */ }
+        .person_wrap .person .person-left .tit em {
+          float: left;
+          font-size: 20px;
+          height: 49px;
+          line-height: 49px;
+          border-top: 2px solid #562916;
+          margin-top: -1px; }
+        .person_wrap .person .person-left .tit span {
+          float: right;
+          font-size: 14px;
+          height: 50px;
+          line-height: 50px;
+          font-style: normal;
+          color: #a0a0a0; }
+          .person_wrap .person .person-left .tit span a {
+            display: block;
+            color: #a0a0a0;
+            padding-right: 10px;
+            background: url(http:www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+            .person_wrap .person .person-left .tit span a:hover {
+              color: #996600; }
+      .person_wrap .person .person-left .person-cont .person-left-top {
+        width: 645px;
+        height: 465px;
+        overflow: hidden;
+        /* margin-bottom: 15px; */ }
+        .person_wrap .person .person-left .person-cont .person-left-top ul {
+          width: 660px;
+          height: 482px; }
+          .person_wrap .person .person-left .person-cont .person-left-top ul li {
+            position: relative;
+            float: left;
+            margin-right: 11px;
+            margin-bottom: 15px;
+            border: 1px solid #f6f6f8; }
+            .person_wrap .person .person-left .person-cont .person-left-top ul li span {
+              display: block; }
+            .person_wrap .person .person-left .person-cont .person-left-top ul li em {
+              position: absolute;
+              left: 0;
+              bottom: 0; }
+              .person_wrap .person .person-left .person-cont .person-left-top ul li em a {
+                width: 270px;
+                padding: 0 30px;
+                text-align: center;
+                height: 40px;
+                padding-top: 20px;
+                line-height: 40px;
+                font-size: 18px;
+                color: #fff;
+                background: url(http://www.xbiao.com/images/pc/2017/hot-pic-bg.png) repeat-x 0 0;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                display: block; }
+          .person_wrap .person .person-left .person-cont .person-left-top ul .person-pic-big {
+            width: 300px;
+            height: 465px;
+            overflow: hidden; }
+            .person_wrap .person .person-left .person-cont .person-left-top ul .person-pic-big em a {
+              width: 240px; }
+          .person_wrap .person .person-left .person-cont .person-left-top ul .person-pic-small {
+            width: 330px;
+            height: 225px;
+            overflow: hidden; }
+    .person_wrap .person .person-right {
+      float: right;
+      width: 330px;
+      height: 517px;
+      border-top: 1px solid #2f190e;
+      background-color: #f6f6f8; }
+      .person_wrap .person .person-right .person-tit {
+        width: 160px;
+        height: 38px;
+        line-height: 38px;
+        background: #2f190e;
+        color: #fff;
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center; }
+      .person_wrap .person .person-right .person-list {
+        padding: 15px 15px 0 15px; }
+        .person_wrap .person .person-right .person-list li {
+          float: left;
+          padding: 0 15px;
+          margin-bottom: 7px;
+          width: 120px; }
+          .person_wrap .person .person-right .person-list li .person-avatar {
+            border-radius: 20px;
+            overflow: hidden; }
+          .person_wrap .person .person-right .person-list li em {
+            display: block;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center; }
+            .person_wrap .person .person-right .person-list li em:hover {
+              color: #996600; }
+
+/**********瀑布流********/
 .watch_container {
   width: 100%; }
   .watch_container ul {
@@ -1553,3 +2361,178 @@ header {
       color: #fff;
       outline: yellowgreen;
       cursor: pointer; }
+
+/*******精选珠宝**********/
+.jewelry_wrap {
+  width: 100%; }
+  .jewelry_wrap .jewelry {
+    width: 1000px;
+    margin: 0 auto 30px; }
+    .jewelry_wrap .jewelry .tit2 {
+      height: 40px;
+      border: 1px solid #e5e5e5;
+      border-bottom: 0px;
+      background-color: #f6f6f8;
+      padding: 0 10px;
+      /* overflow: hidden; */
+      border-top: 1px solid #2f190e; }
+      .jewelry_wrap .jewelry .tit2 em {
+        float: left;
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px; }
+      .jewelry_wrap .jewelry .tit2 span {
+        float: right;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        font-style: normal;
+        color: #a0a0a0; }
+        .jewelry_wrap .jewelry .tit2 span .tit2 span a {
+          display: block;
+          color: #a0a0a0;
+          padding-right: 10px;
+          background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right; }
+    .jewelry_wrap .jewelry .lastest-jewelry-list {
+      border: 1px solid #e5e5e5;
+      border-top: 0;
+      overflow: hidden; }
+      .jewelry_wrap .jewelry .lastest-jewelry-list ul {
+        width: 1000px; }
+        .jewelry_wrap .jewelry .lastest-jewelry-list ul li {
+          float: left;
+          width: 200px;
+          border-left: 1px solid #efefef;
+          margin-left: -1px;
+          overflow: hidden;
+          padding-bottom: 12px; }
+          .jewelry_wrap .jewelry .lastest-jewelry-list ul li .lastest-jewelry-pic {
+            width: 100%;
+            padding: 10px 0; }
+            .jewelry_wrap .jewelry .lastest-jewelry-list ul li .lastest-jewelry-pic span {
+              display: block;
+              width: 170px;
+              height: 175px;
+              overflow: hidden;
+              margin: 0 auto; }
+          .jewelry_wrap .jewelry .lastest-jewelry-list ul li .lastest-jewelry-tit {
+            height: 46px;
+            line-height: 23px;
+            font-size: 14px;
+            padding: 5px 10px 0px;
+            text-align: center;
+            overflow: hidden; }
+
+.footer_wrap {
+  width: 100%;
+  background: #f5f5f5; }
+  .footer_wrap .footer {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0; }
+    .footer_wrap .footer .foot-link {
+      text-align: center;
+      line-height: 24px; }
+      .footer_wrap .footer .foot-link a {
+        font-size: 12px; }
+        .footer_wrap .footer .foot-link a:hover {
+          color: #996600; }
+      .footer_wrap .footer .foot-link .iphone-ico i, .footer_wrap .footer .foot-link .android-ico i, .footer_wrap .footer .foot-link .telphone-ico i {
+        background: url(http://www.xbiao.com/images/pc/pub/ico_phone.png) no-repeat -3px 0;
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+        padding-right: 5px;
+        vertical-align: middle;
+        margin-top: -4px;
+        *margin-top: 0;
+        margin-left: 2px; }
+      .footer_wrap .footer .foot-link .android-ico i {
+        background-position: -1px -26px;
+        width: 21px;
+        height: 24px;
+        line-height: 24px;
+        margin-left: 13px; }
+      .footer_wrap .footer .foot-link .telphone-ico i {
+        background-position: -6px -59px;
+        width: 11px;
+        height: 22px;
+        line-height: 22px;
+        margin-left: 12px; }
+      .footer_wrap .footer .foot-link .footline {
+        background-color: #999;
+        width: 1px;
+        height: 12px;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px; }
+      .footer_wrap .footer .foot-link .wbfoot {
+        background: url(http://www.xbiao.com/images/index/v_xbiao.png) no-repeat 0 5px;
+        padding-left: 20px;
+        display: inline-block;
+        height: 24px; }
+    .footer_wrap .footer .wrapper {
+      width: 1000px; }
+      .footer_wrap .footer .wrapper #bdshare {
+        margin-left: 210px;
+        margin-top: 5px;
+        display: inline;
+        _overflow-x: hidden;
+        z-index: 999999;
+        padding-bottom: 2px;
+        font-size: 12px;
+        float: left;
+        text-align: left !important;
+        zoom: 1; }
+        .footer_wrap .footer .wrapper #bdshare .f_company {
+          float: left;
+          padding-top: 7px;
+          font-size: 12px; }
+        .footer_wrap .footer .wrapper #bdshare a {
+          display: block;
+          font-family: 'å®‹ä½“',Arial;
+          height: 16px;
+          float: left;
+          cursor: pointer;
+          padding-top: 6px;
+          padding-bottom: 3px;
+          padding-left: 22px; }
+        .footer_wrap .footer .wrapper #bdshare a {
+          background: url(http://bdimg.share.baidu.com/static/images/is.png?cdnversion=20131219) no-repeat; }
+        .footer_wrap .footer .wrapper #bdshare .bds_tsina {
+          background-position: 0 -115px !important; }
+        .footer_wrap .footer .wrapper #bdshare .bds_qzone {
+          background-position: 0 -75px !important; }
+        .footer_wrap .footer .wrapper #bdshare .bds_tqq {
+          background-position: 0 -235px !important; }
+        .footer_wrap .footer .wrapper #bdshare .bds_renren {
+          background-position: 0 -195px !important; }
+        .footer_wrap .footer .wrapper #bdshare span.bds_more {
+          display: block;
+          font-family: 'å®‹ä½“',Arial;
+          height: 16px;
+          float: left;
+          cursor: pointer;
+          padding-top: 6px;
+          padding-bottom: 3px;
+          padding-left: 22px; }
+        .footer_wrap .footer .wrapper #bdshare .shareCount {
+          width: 37px;
+          height: 16px;
+          background-position: 0 -30px !important;
+          margin-top: 5px;
+          overflow: hidden;
+          font-size: 12px;
+          line-height: 16px; }
+    .footer_wrap .footer .copyright {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px; }
+      .footer_wrap .footer .copyright img {
+        display: inline-block;
+        border: none;
+        vertical-align: top; }
+      .footer_wrap .footer .copyright a:hover {
+        color: #996600;
+        text-decoration: none; }

@@ -1833,7 +1833,996 @@ header{
         }
     }
 } 
-//**********瀑布流********//
+/********论坛*******/
+.watch_bbs{
+    width: 100%;
+    .bbs{
+        width: 1000px;
+        margin: 0 auto 30px;
+        .bbs-left {
+            float: left;
+            width: 776px;
+            .tit {
+                height: 50px;
+                border-top: 1px solid #e5e5e5;
+                /* overflow: hidden; */
+                em {
+                    float: left;
+                    font-size: 20px;
+                    height: 49px;
+                    line-height: 49px;
+                    border-top: 2px solid #562916;
+                    margin-top: -1px;
+                }
+                span {
+                    float: right;
+                    font-size: 14px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-style: normal;
+                    color: #a0a0a0;
+                    a {
+                        display: block;
+                        color: #a0a0a0;
+                        padding-right: 10px;
+                        background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right;
+                        &:hover{
+                            color: #996600;
+                        }
+                    }
+                }
+                .sub-tit {
+                    float: right;
+                    margin-right: 5px;
+                    li {
+                        float: left;
+                        height: 50px;
+                        line-height: 50px;
+                        margin-right: 15px;
+                        font-size: 14px;
+                        color: #562916;
+                        a {
+                            color: #562916;
+                            &:hover{
+                                color: #996600;
+                            }
+                        }
+                    }
+                }
+                
+                
+            }
+            .bbs-main-pic {
+                float: left;
+                position: relative;
+                width: 300px;
+                height: 450px;
+                border: 1px solid #f6f6f8;
+                overflow: hidden;
+                em {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    a {
+                        display: block;
+                        width: 240px;
+                        padding: 0 30px;
+                        text-align: center;
+                        height: 40px;
+                        padding-top: 20px;
+                        line-height: 40px;
+                        font-size: 18px;
+                        color: #fff;
+                        background: url(http://www.xbiao.com/images/pc/2017/hot-pic-bg.png) repeat-x 0 0;
+                        &:hover{
+                            color: #996600;
+                        }
+                    }
+                }
+            }
+            .bbs-sub-pic {
+                float: right;
+                width: 450px;
+                height: 450px;
+                overflow: hidden;
+                ul {
+                    margin-top: -15px;
+                    .bbs-post {
+                        width: 450px;
+                        overflow: hidden;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid #e5e5e5;
+                        dl {
+                            width: 465px;
+                            dt {
+                                float: left;
+                                width: 450px;
+                                height: 43px;
+                                em {
+                                    float: left;
+                                    height: 43px;
+                                    width: 375px;
+                                    line-height: 43px;
+                                    font-size: 16px;
+                                    color: #000;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    display: block;
+                                    &:hover{
+                                        color: #996600;
+                                    }
+                                }
+                                i {
+                                    float: right;
+                                    padding-left: 15px;
+                                    height: 43px;
+                                    line-height: 43px;
+                                    font-size: 12px;
+                                    color: #959595;
+                                    font-style: normal;
+                                    background: url(http://www.xbiao.com/images/pc/2017/icon-comment.png) no-repeat center left;
+                                }
+                            }
+                            dd {
+                                float: left;
+                                width: 140px;
+                                height: 102px;
+                                margin-right: 15px;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bbs-right {
+            float: right;
+            width: 198px;
+            height: 500px;
+            overflow: hidden;
+            border: 1px solid #e5e5e5;
+            border-top: 0px;
+            .bbs-nav {
+                width: 198px;
+                overflow: hidden;
+                li {
+                    float: left;
+                    width: 97px;
+                    background-color: #f6f6f8;
+                    cursor: pointer;
+                    border: 1px solid #e5e5e5;
+                    font-size: 16px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #313131;
+                }
+                li.act {
+                    background-color: #ffffff;
+                    border-left: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    border-top: 1px solid #562916;
+                }
+            }
+            .bbs-cont {
+                width: 168px;
+                margin: 0 auto;
+                overflow: hidden;
+                ul {
+                    margin-top: -1px;
+                    li {
+                        display: block;
+                        padding: 6px 0 4px;
+                        background: url(http://www.xbiao.com/images/pc/2017/hot-border.png) repeat-x 0 0;
+                        em {
+                            text-indent: 30px;
+                            display: block;
+                            font-size: 14px;
+                            line-height: 26px;
+                            background-image: url(http://www.xbiao.com/images/pc/2017/number.png);
+                            background-repeat: no-repeat;
+                            a{
+                                &:hover{
+                                    color: #996600;
+                                }
+                            }
+                        }
+                        span {
+                            text-indent: 30px;
+                            display: block;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #a0a0a0;
+                        }
+                    }
+                    li.no1 em {
+                        background-position: 8px 6px;
+                    }
+                    li.no2 em {
+                        background-position: 8px -50px;
+                    }
+                    li.no3 em {
+                        background-position: 8px -106px;
+                    }
+                    li.no4 em {
+                        background-position: 8px -164px;
+                    }
+                    li.no5 em {
+                        background-position: 8px -220px;
+                    }
+                    li.no6 em {
+                        background-position: 8px -275px;
+                    }
+                    li.no7 em {
+                        background-position: 8px -335px;
+                    }
+                    li.no8 em {
+                        background-position: 8px -390px;
+                    }
+                }
+                .bbs-star {
+                    margin-top: 11px;
+                    overflow: hidden;
+                    ol {
+                        margin-top: -1px;
+                        li {
+                            padding: 11px 0 10px;
+                            overflow: hidden;
+                            position: relative;
+                            background: url(http://www.xbiao.com/images/pc/2017/hot-border.png) repeat-x 0 0;
+                            .star-avatar {
+                                float: left;
+                                margin-right: 10px;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                            }
+                            em {
+                                display: block;
+                                font-size: 14px;
+                                color: #000;
+                                height: 20px;
+                                overflow: hidden;
+                                line-height: 20px;
+                            }
+                            span {
+                                display: block;
+                                font-size: 12px;
+                                color: #a0a0a0;
+                                height: 15px;
+                                overflow: hidden;
+                                line-height: 15px;
+                            }
+                            i {
+                                display: block;
+                                font-style: normal;
+                                font-size: 12px;
+                                color: #562916;
+                                line-height: 15px;
+                            }
+                            .cover {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+
+    }
+} 
+/********资深表友***********/
+.deep_wrap{
+    width: 100%;
+    .deep{
+        width: 1000px;
+        margin: 0 auto 30px;
+        .deep-watcher {
+            float: left;
+            width: 550px;
+            height: 214px;
+            border: 1px solid #e5e5e5;
+            overflow: hidden;
+            .title {
+                padding: 0 15px 0 7px;
+                height: 38px;
+                line-height: 38px;
+                background-color: #f6f6f8;
+                .title-left {
+                    float: left;
+                    overflow: hidden;
+                    em {
+                        float: left;
+                        margin-right: 4px;
+                        font-size: 16px;
+                        color: #000;
+                    }
+                    span {
+                        float: left;
+                        font-size: 12px;
+                        color: #a0a0a0;
+                        margin-left: 5px;
+                    }
+                }
+                .title-right {
+                    float: right;
+                    .title-change {
+                        display: block;
+                        height: 38px;
+                        line-height: 38px;
+                        cursor: pointer;
+                        padding-right: 30px;
+                        font-style: normal;
+                        color: #562916;
+                        background: url(http://www.xbiao.com/images/pc/2017/change.png) no-repeat center right;
+                    }
+                }
+
+            }
+            .deep-watcher-list {
+                padding: 0 5px;
+                ul{
+                    li {
+                        float: left;
+                        width: 162px;
+                        height: 70px;
+                        padding: 9px 0 9px 18px;
+                        .deep-watcher-avatar {
+                            float: left;
+                            width: 50px;
+                            height: 50px;
+                            margin-right: 2px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            margin-top: 10px;
+                        }
+                        .deep-watcher-info {
+                            float: left;
+                            width: 90px;
+                            padding: 0 10px;
+                            em {
+                                display: block;
+                                height: 20px;
+                                line-height: 20px;
+                                font-size: 15px;
+                                color: #000;
+                                overflow: hidden;
+                                &:hover{
+                                    color: #996600;
+                                }
+                            }
+                            span {
+                                display: block;
+                                height: 20px;
+                                line-height: 20px;
+                                font-size: 12px;
+                                color: #959595;
+                                overflow: hidden;
+                                margin-top: -2px;
+                            }
+                            i {
+                                display: block;
+                                width: 75px;
+                                text-align: center;
+                                height: 20px;
+                                line-height: 20px;
+                                font-size: 12px;
+                                color: #000;
+                                background-color: #f6f6f8;
+                                font-style: normal;
+                                border: 1px solid #eeeeee;
+                                border-radius: 3px;
+                                margin-top: 2px;
+                                &:hover{
+                                    color: #996600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .lastest-answer {
+            float: right;
+            width: 420px;
+            border: 1px solid #e5e5e5;
+            overflow: hidden;
+            .title {
+                padding: 0 15px 0 7px;
+                height: 38px;
+                line-height: 38px;
+                background-color: #f6f6f8;
+                .title-left {
+                    float: left;
+                    overflow: hidden;
+                    em {
+                        float: left;
+                        margin-right: 4px;
+                        font-size: 16px;
+                        color: #000;
+                    }
+                    span {
+                        float: left;
+                        font-size: 12px;
+                        color: #a0a0a0;
+                        margin-left: 5px;
+                        i {
+                            font-size: 12px;
+                            color: #f00;
+                            font-style: normal;
+                        }
+                    }
+                }
+                .title-right {
+                    float: right;
+                    .title-change {
+                        display: block;
+                        height: 38px;
+                        line-height: 38px;
+                        cursor: pointer;
+                        padding-right: 30px;
+                        font-style: normal;
+                        color: #562916;
+                        background: url(http://www.xbiao.com/images/pc/2017/change.png) no-repeat center right;
+                    }
+                }
+
+            }
+            .lastest-list {
+                padding: 8px 0;
+                ul{
+                    li {
+                        overflow: hidden;
+                        padding: 0 10px;
+                        em {
+                            float: left;
+                            font-size: 15px;
+                            text-align: left;
+                            background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 8px center;
+                            padding-left: 20px;
+                            line-height: 32px;
+                            height: 32px;
+                            overflow: hidden;
+                            width: 320px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            display: block;
+                            a{
+                                &:hover{
+                                    color: #996600;
+                                }
+                            }
+                            
+                        }
+                        span {
+                            float: right;
+                            font-size: 12px;
+                            color: #959595;
+                            line-height: 32px;
+                            height: 32px;
+                            i {
+                                font-style: normal;
+                                color: #e60012;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.live_wrap{
+    width: 100%;
+    .live_report{
+        width: 1000px;
+        margin: 0 auto 30px;
+        .tit {            
+            height: 50px;
+            border-top: 1px solid #e5e5e5;
+            em {
+                float: left;
+                font-size: 20px;
+                height: 49px;
+                line-height: 49px;
+                border-top: 2px solid #562916;
+                margin-top: -1px;
+            }
+            span {
+                float: right;
+                font-size: 14px;
+                height: 50px;
+                line-height: 50px;
+                font-style: normal;
+                color: #a0a0a0;
+                a {
+                    display: block;
+                    color: #a0a0a0;
+                    padding-right: 10px;
+                    background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right;
+                    &:hover{
+                        color: #996600;
+                    }
+                }
+            }
+
+        }
+        .scene_box {
+            width: 1000px;
+            height: 420px;
+            overflow: hidden;
+            .main_box {
+                float: left;
+                position: relative;
+                width: 680px;
+                height: 420px;
+                overflow: hidden;
+                a {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 680px;
+                    height: 420px;
+                    img {
+                        width: 680px;
+                        height: 420px;
+                    }                    
+                }
+            }
+            .sub_box {
+                float: right;
+                width: 320px;
+                height: 420px;
+                background: #313131;
+                .sub_item {
+                    position: relative;
+                    height: 102px;
+                    width: 182px;
+                    padding: 0 8px 0 130px;
+                    border-top: 1px solid #434343;
+                    border-bottom: 1px solid #1d1d1d;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .sub_bg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #dcdcdc;
+                        opacity: .5;
+                        display: none;
+                    }
+                    dt {
+                        position: absolute;
+                        top: 14px;
+                        left: 13px;
+                        width: 105px;
+                        height: 77px;
+                        overflow: hidden;
+                    }
+                    .scene_title {
+                        position: relative;
+                        font-size: 14px;
+                        line-height: 24px;
+                        height: 48px;
+                        overflow: hidden;
+                        color: #dcdcdc;
+                        word-break: break-all;
+                        margin-top: 10px;
+                    }
+                    .scene_note {
+                        height: 24px;
+                        margin-top: 10px;
+                        font-size: 12px;
+                        color: #a0a0a0;
+                        overflow: hidden;
+                    }
+                }
+                dl.act .sub_bg {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+/******* 品牌资讯 ********/ 
+.brand_news_wrap{
+    width: 100%;
+    .brand_news{
+        width: 1000px;
+        margin: 0 auto 30px;
+        .brand-news-left {
+            float: left;
+            width: 780px;
+            .tit {
+                height: 50px;
+                border-top: 1px solid #e5e5e5;
+                /* overflow: hidden; */
+                em {
+                    float: left;
+                    font-size: 20px;
+                    height: 49px;
+                    line-height: 49px;
+                    border-top: 2px solid #562916;
+                    margin-top: -1px;
+                }
+            }
+            .brand-news-cont {
+                .brand-news-cont-left {
+                    float: left;
+                    .brand-main-pic {
+                        position: relative;
+                        width: 335px;
+                        height: 215px;
+                        overflow: hidden;
+                        margin-bottom: 15px;
+                        border: 1px solid #f6f6f8;
+                        em {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            a {
+                                display: block;
+                                width: 275px;
+                                padding: 0 30px;
+                                text-align: center;
+                                height: 40px;
+                                padding-top: 20px;
+                                line-height: 40px;
+                                font-size: 18px;
+                                color: #fff;
+                                background: url(http://www.xbiao.com/images/pc/2017/hot-pic-bg.png) repeat-x 0 0;
+                                &:hover {
+                                    color: #996600;
+                                }
+                            }
+                        }
+                    }
+                    .brand-main-txt {
+                        width: 335px;
+                        height: 153px;
+                        overflow: hidden;
+                        ul {
+                            display: block;
+                            width: 350px;
+                            height: 155px;
+                            li {
+                                float: left;
+                                margin-right: 11px;
+                                margin-bottom: 15px;
+                                border: 1px solid #f6f6f8;
+                                span {
+                                    display: block;
+                                    width: 160px;
+                                    height: 103px;
+                                    overflow: hidden;
+                                    a:hover {
+                                        color: #996600;
+                                        text-decoration: none;
+                                    }
+                                }
+                                em {
+                                    display: block;
+                                    padding: 3px 0;
+                                    background-color: #f6f6f8;
+                                    a {
+                                        width: 140px;
+                                        overflow: hidden;
+                                        padding: 0px 10px;
+                                        display: block;
+                                        color: #000;
+                                        text-align: center;
+                                        height: 44px;
+                                        line-height: 22px;
+                                        overflow: hidden;
+                                        font-size: 14px;
+                                        background: #f6f6f8;
+                                        &:hover {
+                                            color: #996600;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .brand-news-cont-right {
+                    float: left;
+                    margin-left: 13px;
+                    height: 383px;
+                    overflow: hidden;
+                    a:hover{
+                        color: #996600;
+                    }
+                    .brand-art-list-wrap {
+                        margin-top: -8px;
+                        .brand-art-list {
+                            margin-bottom: 6px;
+                            dt {
+                                font-size: 18px;
+                                text-align: left;
+                                background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+                                padding-left: 20px;
+                                line-height: 35px;
+                                height: 35px;
+                                overflow: hidden;
+                                width: 410px;
+                                font-weight: bold;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                display: block;
+                            }
+                            dd {
+                                font-size: 16px;
+                                text-align: left;
+                                background: url(http://www.xbiao.com/images/pc/2017/point.png) no-repeat 2px center;
+                                padding-left: 20px;
+                                line-height: 32px;
+                                height: 32px;
+                                width: 390px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+        .watch-top {
+            float: right;
+            width: 198px;
+            height: 435px;
+            overflow: hidden;
+            border: 1px solid #e5e5e5;
+            border-top: 0px;
+            .watch-nav {
+                width: 198px;
+                overflow: hidden;
+                ul {
+                    width: 200px;
+                    margin-left: -1px;
+                    li {
+                        float: left;
+                        width: 98px;
+                        background-color: #f6f6f8;
+                        cursor: pointer;
+                        border: 1px solid #e5e5e5;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        color: #313131;
+                        font-size: 16px;
+                    }
+                    li.act {
+                        background-color: #ffffff;
+                        border-left: 1px solid #fff;
+                        border-right: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        border-top: 1px solid #562916;
+                    }
+                }
+            }
+            .watch-cont {
+                width: 168px;
+                margin: 0 auto;
+                overflow: hidden;
+                ul {
+                    margin-top: -1px;
+                    li {
+                        display: block;
+                        padding: 3px 0 3px;
+                        background: url(http://www.xbiao.com/images/pc/2017/hot-border.png) repeat-x 0 0;
+                        em {
+                            width: 100%;
+                            text-indent: 30px;
+                            display: block;
+                            font-size: 12px;
+                            line-height: 26px;
+                            height: 26px;
+                            background-image: url(http://www.xbiao.com/images/pc/2017/number.png);
+                            background-repeat: no-repeat;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            display: block;
+                        }
+                        span {
+                            width: 100%;
+                            text-indent: 30px;
+                            display: block;
+                            font-size: 12px;
+                            line-height: 16px;
+                            height: 16px;
+                            margin-top: -6px;
+                            color: #000;
+                            margin-bottom: 5px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            display: block;
+                        }
+                        .watch-img {
+                            display: none;
+                            width: 100px;
+                            height: 145px;
+                            margin: 0 auto;
+                        }
+                       
+                    }
+                    li.no1 em {
+                        background-position: 8px 6px;
+                    }
+                    li.no2 em {
+                        background-position: 8px -50px;
+                    }
+                    li.no3 em {
+                        background-position: 8px -106px;
+                    }
+                    li.no4 em {
+                        background-position: 8px -164px;
+                    }
+                    li.no5 em {
+                        background-position: 8px -220px;
+                    }
+                }
+            }
+        }
+    }
+}
+/********人物访谈**********/ 
+.person_wrap{
+    width: 100%;
+    .person{
+        width: 1000px;
+        margin: 0 auto 30px;
+        .person-left {
+            float: left;
+            width: 645px;
+            .tit{
+                height: 50px;
+                border-top: 1px solid #e5e5e5;
+                /* overflow: hidden; */
+                em {
+                    float: left;
+                    font-size: 20px;
+                    height: 49px;
+                    line-height: 49px;
+                    border-top: 2px solid #562916;
+                    margin-top: -1px;
+                }
+                span {
+                    float: right;
+                    font-size: 14px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-style: normal;
+                    color: #a0a0a0;
+                    a {
+                        display: block;
+                        color: #a0a0a0;
+                        padding-right: 10px;
+                        background: url(http:www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right;
+                        &:hover{
+                            color: #996600;
+                        }
+                    }
+                }
+            }
+            .person-cont{
+                .person-left-top {
+                    width: 645px;
+                    height: 465px;
+                    overflow: hidden;
+                    /* margin-bottom: 15px; */
+                    ul {
+                        width: 660px;
+                        height: 482px;
+                        li {
+                            position: relative;
+                            float: left;
+                            margin-right: 11px;
+                            margin-bottom: 15px;
+                            border: 1px solid #f6f6f8;
+                            span {
+                                display: block;
+                            }
+                            em {
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                a {
+                                    width: 270px;
+                                    padding: 0 30px;
+                                    text-align: center;
+                                    height: 40px;
+                                    padding-top: 20px;
+                                    line-height: 40px;
+                                    font-size: 18px;
+                                    color: #fff;
+                                    background: url(http://www.xbiao.com/images/pc/2017/hot-pic-bg.png) repeat-x 0 0;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    display: block;
+                                }
+                            }
+                        }
+                        .person-pic-big {
+                            width: 300px;
+                            height: 465px;
+                            overflow: hidden;
+                            em a {
+                                width: 240px;
+                            }
+                        }
+                        .person-pic-small {
+                            width: 330px;
+                            height: 225px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        .person-right {
+            float: right;
+            width: 330px;
+            height: 517px;
+            border-top: 1px solid #2f190e;
+            background-color: #f6f6f8;
+            .person-tit {
+                width: 160px;
+                height: 38px;
+                line-height: 38px;
+                background: #2f190e;
+                color: #fff;
+                font-size: 18px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .person-list {
+                padding: 15px 15px 0 15px;
+                li {
+                    float: left;
+                    padding: 0 15px;
+                    margin-bottom: 7px;
+                    width: 120px;
+                    .person-avatar {
+                        border-radius: 20px;
+                        overflow: hidden;
+                    }
+                    em {
+                        display: block;
+                        width: 120px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        text-align: center;
+                        &:hover{
+                            color: #996600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/**********瀑布流********/
 
 .watch_container{
     width: 100%;
@@ -1876,4 +2865,214 @@ header{
         }
     }
 }
-
+/*******精选珠宝**********/ 
+.jewelry_wrap{
+    width: 100%;
+    .jewelry{
+        width: 1000px;
+        margin: 0 auto 30px;
+        .tit2 {
+            height: 40px;
+            border: 1px solid #e5e5e5;
+            border-bottom: 0px;
+            background-color: #f6f6f8;
+            padding: 0 10px;
+            /* overflow: hidden; */
+            border-top: 1px solid #2f190e;
+            em {
+                float: left;
+                font-size: 16px;
+                height: 40px;
+                line-height: 40px;
+            }
+            span {
+                float: right;
+                font-size: 14px;
+                height: 40px;
+                line-height: 40px;
+                font-style: normal;
+                color: #a0a0a0;
+                .tit2 span a {
+                    display: block;
+                    color: #a0a0a0;
+                    padding-right: 10px;
+                    background: url(http://www.xbiao.com/images/pc/2017/tit-gt.png) no-repeat center right;
+                }
+            }
+        }
+        .lastest-jewelry-list {
+            border: 1px solid #e5e5e5;
+            border-top: 0;
+            overflow: hidden;
+            ul {
+                width: 1000px;
+                li {
+                    float: left;
+                    width: 200px;
+                    border-left: 1px solid #efefef;
+                    margin-left: -1px;
+                    overflow: hidden;
+                    padding-bottom: 12px;
+                    .lastest-jewelry-pic {
+                        width: 100%;
+                        padding: 10px 0;
+                        span {
+                            display: block;
+                            width: 170px;
+                            height: 175px;
+                            overflow: hidden;
+                            margin: 0 auto;
+                        }
+                    }
+                    .lastest-jewelry-tit {
+                        height: 46px;
+                        line-height: 23px;
+                        font-size: 14px;
+                        padding: 5px 10px 0px;
+                        text-align: center;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer_wrap{
+    width: 100%;
+    background: #f5f5f5;
+    .footer{
+        width:1000px;
+        margin: 0 auto;
+        padding: 20px 0;
+        .foot-link {
+            text-align: center;
+            line-height: 24px;
+            a{
+                font-size:12px;
+                &:hover{
+                    color: #996600;
+                } 
+            }
+            .iphone-ico i, .android-ico i, .telphone-ico i {
+                background: url(http://www.xbiao.com/images/pc/pub/ico_phone.png) no-repeat -3px 0;
+                display: inline-block;
+                width: 18px;
+                height: 20px;
+                padding-right: 5px;
+                vertical-align: middle;
+                margin-top: -4px;
+                *margin-top: 0;
+                margin-left: 2px;
+            }
+            .android-ico i {
+                background-position: -1px -26px;
+                width: 21px;
+                height: 24px;
+                line-height: 24px;
+                margin-left: 13px;
+            }
+            .telphone-ico i {
+                background-position: -6px -59px;
+                width: 11px;
+                height: 22px;
+                line-height: 22px;
+                margin-left: 12px;
+            }
+            .footline {
+                background-color: #999;
+                width: 1px;
+                height: 12px;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+            .wbfoot {
+                background: url(http://www.xbiao.com/images/index/v_xbiao.png) no-repeat 0 5px;
+                padding-left: 20px;
+                display: inline-block;
+                height: 24px;
+            }
+        }
+        .wrapper {
+            width: 1000px;
+            #bdshare {
+                margin-left: 210px;
+                margin-top: 5px;
+                display: inline;
+                _overflow-x: hidden;
+                z-index: 999999;
+                padding-bottom: 2px;
+                font-size: 12px;
+                float: left;
+                text-align: left!important;
+                zoom: 1;
+                .f_company {
+                    float: left;
+                    padding-top: 7px;
+                    font-size: 12px;
+                }
+                a {
+                    display: block;
+                    font-family: 'å®‹ä½“',Arial;
+                    height: 16px;
+                    float: left;
+                    cursor: pointer;
+                    padding-top: 6px;
+                    padding-bottom: 3px;
+                    padding-left: 22px;
+                }
+                a {
+                    background: url(http://bdimg.share.baidu.com/static/images/is.png?cdnversion=20131219) no-repeat;
+                }
+                .bds_tsina {
+                    background-position: 0 -115px!important;
+                }
+                .bds_qzone {
+                    background-position: 0 -75px!important;
+                }
+                .bds_tqq {
+                    background-position: 0 -235px!important;
+                }
+                .bds_renren {
+                    background-position: 0 -195px!important;
+                }
+                span.bds_more,{
+                   
+                    display: block;
+                    font-family: 'å®‹ä½“',Arial;
+                    height: 16px;
+                    float: left;
+                    cursor: pointer;
+                    padding-top: 6px;
+                    padding-bottom: 3px;
+                    padding-left: 22px;
+                }
+                .shareCount {
+                    width: 37px;
+                    height: 16px;
+                    background-position: 0 -30px!important;
+                    margin-top: 5px;
+                    overflow: hidden;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        } 
+        .copyright {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+            img {
+                display: inline-block;
+                border: none;
+                vertical-align: top;
+            }
+            a:hover {
+                color: #996600;
+                text-decoration: none;
+                
+            }
+        }
+    }
+}

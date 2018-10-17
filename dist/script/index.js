@@ -315,6 +315,28 @@ $(function(){
         
         $(".hot_list1").toggle()
     })
+    /******板块排行 选项卡********/
+    $('.bbs-nav ul li').bind('mouseover',function(){
+        var index = $(this).index();
+        $(this).siblings().removeClass('act');
+        $(this).addClass('act');
+        $('.bbs-cont').hide();
+        $('.bbs-cont').eq(index).show();
+    }) 
+    // 腕表排行tab切换
+	$('.watch-nav ul li').bind('mouseover',function(){
+		var index = $(this).index();
+		$(this).siblings().removeClass('act');
+		$(this).addClass('act');
+		$('.watch-cont').hide();
+		$('.watch-cont').eq(index).show();
+	})
+
+
+
+	$('.watch-cont ul li').bind('mouseover',function(){
+		$(this).find('.watch-img').show().parent('li').siblings().find('.watch-img').hide();
+	})
 })
 /********毒物腕表************/
 function Skip(){
@@ -382,3 +404,66 @@ var skip = new Skip();
 skip.init({
 
 });
+/******资深网友*******/ 
+function netfriend(){
+	var count = 1;						 //- 计数
+	var n     = 6;                       //- 每次显示的数量
+	var len   = $('.deep-watcher-list li').length;  //- 总数
+	$('.deep-watcher-list li').hide();
+	$('.deep-watcher-list li:lt('+n+')').show();
+	$('.deep-watcher .title-change').bind('click',function(){
+		count++;
+		var old = n*count;
+		if(n*count>=len){
+			$('.deep-watcher-list li').hide();
+			$('.deep-watcher-list li:lt('+len+')').show();
+			$('.deep-watcher-list li:lt('+n*(count-1)+')').hide();
+			count=0;
+		}else{
+			$('.deep-watcher-list li').hide();
+			$('.deep-watcher-list li:lt('+n*count+')').show();
+			$('.deep-watcher-list li:lt('+n*(count-1)+')').hide();
+		}
+	})	
+}
+netfriend()
+/*******最新解答********/
+function random(){
+	var count = 1;						 //- 计数
+	var n     = 5;                       //- 每次显示的数量
+	var len   = $('.lastest-list li').length;  //- 总数
+	$('.lastest-list li').hide();
+	$('.lastest-list li:lt('+n+')').show();
+	$('.lastest-answer .title-change').bind('click',function(){
+		count++;
+		var old = n*count;
+		if(n*count>=len){
+			$('.lastest-list li').hide();
+			$('.lastest-list li:lt('+len+')').show();
+			$('.lastest-list li:lt('+n*(count-1)+')').hide();
+			count=0;
+		}else{
+			$('.lastest-list li').hide();
+			$('.lastest-list li:lt('+n*count+')').show();
+			$('.lastest-list li:lt('+n*(count-1)+')').hide();
+		}
+	})	
+}
+random() 
+/*************现场直击******************/ 
+
+function scene(){
+    var btn = $(".sub_item"),
+        img = $(".main_box a");
+
+    img.eq(0).show();
+
+    btn.mouseover(function(){
+        var index = $(this).index();
+        if(!$(this).hasClass("act")){
+            $(this).addClass("act").siblings().removeClass("act");
+        }
+        img.eq(index).show().siblings().hide();
+    });
+}
+scene()
