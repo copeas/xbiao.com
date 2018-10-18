@@ -41,7 +41,8 @@ gulp.task("html", ()=>{
 gulp.task("watch", ()=>{
     gulp.watch("index.html",["html","sass"]);
     gulp.watch("sigin.html",["html","sass"]); 
-    gulp.watch("register.html",["html","sass"]); 
+    gulp.watch("register.html",["html","sass"]);
+    gulp.watch("list.html",["html","sass"]);  
     gulp.watch("sass/*.scss",["html","sass"]);
     gulp.watch("script/*.js",["html","script"])
 })

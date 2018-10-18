@@ -1,0 +1,525 @@
+@import "reset.scss";
+body,html{
+    height: 100%;
+    width: 100%;
+}
+//******header********//
+header{
+    width: 100%;
+    padding:  12px 0;
+    z-index: 2;
+    .lslisi{
+        width: 1000px;
+        margin: 0 auto;
+        .left{
+            float: left;
+            .logo{
+                float: left;
+                float: left;
+                width: 134px;
+                height: 42px;
+                background: url(http://www.xbiao.com/images/pc/pub/head_logo.jpg);
+                margin-right: 38px;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: url() no-repeat;
+                }
+            }
+            .search{
+                position: relative;
+                width: 298px;
+                height: 30px;
+                // background-color: #fff;
+                border: 1px solid #d2d2d2;
+                margin-top: 6px;float: left;
+            }
+            input{
+                display: block;
+               
+                border: none;
+                outline: none;
+                width: 240px;
+                padding-left: 10px;
+                height: 30px;
+                line-height: 30px;
+                float: left;
+            }
+            .btsh{
+                position: absolute;
+                right: -1px;
+                top: -1px;
+                width: 37px;
+                height: 32px;
+                border-left: 1px solid #d2d2d2;
+                &:hover{
+                    background-color: #2f190e;
+                    width: 35px;
+                    height: 30px;
+                    border: 1px solid #2f190e;
+                }
+                button{
+                   
+                    border: 0;
+                    
+                    background: url(http://www.xbiao.com/images/pc/pub/topbar.png) 7px -135px;
+                    width: 37px;
+                    height: 32px;
+                    cursor: pointer;
+                    outline: none;
+                    &:hover{
+                        background-position: -33px -135px;
+                    }
+                }
+            }
+            .downloadApp{
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                background-image: url(http://www.xbiao.com/images/pc/pub/headerico.png);
+                background-repeat: no-repeat;
+                font-size: 14px;
+                margin-left: 24px;
+                margin-right: 12px;
+                background-position: 0 11px;
+                padding-left: 18px;
+                &:hover{
+                    background-position: 0 -19px;
+                    color:#996600;
+                }
+            }
+            span{
+                height: 16px;
+                width: 1px;
+                display: inline-block;
+                background-color:#ccc;
+                margin-top:12px;
+                vertical-align: top;  
+            }
+            .topWeibo{
+                width: 21px;
+                background-position: 0 -119px;
+                vertical-align: top;
+                margin-left: 16px;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                background-image: url(http://www.xbiao.com/images/pc/pub/headerico.png);
+                background-repeat: no-repeat;
+                font-size: 14px;
+                &:hover{
+                    background-position: 0 -150px;
+                }
+            }
+            .topWeichat{
+                width: 21px;
+                background-position: 0 -55px;
+                vertical-align: top;
+                margin-left: 16px;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                position: relative;
+                background-image: url(http://www.xbiao.com/images/pc/pub/headerico.png);
+                background-repeat: no-repeat;
+                font-size: 14px;
+                &:hover{
+                    background-position: 0 -85px;
+                }
+                i{
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 40px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #2d190f;
+                    padding: 10px;
+                    background-color: #fff;
+                    z-index: 2;
+                }
+                &:hover i{
+                    display: block;
+                }
+                
+            }
+        }
+        .center{
+            width: 70px;
+            height: 40px;
+            // background: yellowgreen;
+            float: left;
+            a{  
+                display: block;
+                width: 70px;
+                height: 40px;
+                // &:hover{
+
+                // }
+                
+                span{
+                    position: relative;
+                    margin-left:30px; 
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                    background: url(../images/shoppingcar.png) no-repeat center center;
+                    background-size: 20px 20px;  
+                    i{
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        color: #fff;
+                        font-size:12px; 
+                        background: yellowgreen;
+                        position: absolute;
+                        top: 0px;
+                        right: 0; 
+                        text-align: center;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+        .right{
+            float: right;
+            height:40px;
+            position: relative;
+            z-index: 2;
+            .login{
+                position: relative;
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+                padding-right: 15px;
+                padding-left: 25px;
+                a{
+                    display: inline-block;
+                    margin-right:-3px; 
+                    &:hover{
+                        color: #996600
+                    }
+                }
+                .show{
+                    
+                    color: #000;
+                }
+                .unshow{
+                    display: none;
+                   
+                    color: #000;
+                }
+                &:hover .unshow{
+                    display: inline;
+                }
+                &:hover .show{
+                    display: none;
+                }
+                &:hover{
+                    .method_hide{
+                        display: block;
+                    }
+                }
+                .method_hide{
+                    display: none;
+                    z-index: 2;
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    width:121px;
+                    background:  #fff;                    
+                    border: 1px solid #c9c9c9;
+                    span{
+                        display: block;
+                        position: absolute;
+                        top: -8px;
+                        left: 51px;
+                        width: 17px;
+                        height: 8px;
+                        background: url(http://www.xbiao.com/images/pc/pub/topbar.png) -21px -184px;
+                        z-index: 3;
+                    }
+                    a{
+                        display: block;
+                        width: 121px;
+                        height: 44px;
+                        line-height: 44px;
+                        background: url(http://www.xbiao.com/images/pc/pub/ico_login.png) no-repeat;
+                    }
+                    .first_method{
+                        background: none;
+                        border-bottom: 1px dashed #c9c9c9; 
+                        text-align: center;
+                    }
+                    .second_method{
+                        background-position: 15px -2px ;
+                        border-bottom: 1px dashed #c9c9c9;
+                        text-indent:40px;  
+                    }
+                    .third_method{
+                        background-position: 15px -49px;
+                        border-bottom: 1px dashed #c9c9c9;
+                        text-indent:40px;   
+                    }
+                    .fourth_method{
+                        background-position: 15px -93px ;
+                        text-indent:40px;  
+                        
+                    }
+                }
+            }
+            .sign{
+                display: inline-block;
+                a{
+                    &:hover{
+                        color: #996600
+                    }
+                }
+            }
+           
+        }
+    }
+}
+//****导航栏****//
+.nav_groups{
+    width: 100%;
+    height: 64px;
+    margin-bottom: 15px;
+    padding-top: 11px;
+    background: url(http://www.xbiao.com/images/pc/2017/menu-bg.jpg) repeat 0 0;
+    nav{
+        width: 1000px;
+        margin: 0 auto;
+        ul{
+            width: 1200px;
+            overflow: hidden;
+            li{
+                float: left;
+                padding: 0 23px 0 23px;
+                margin-left: -3px;
+                background: url(http://www.xbiao.com/images/pc/2017/menu-line.jpg) no-repeat left center;
+                dl{
+
+                    overflow: hidden;                    
+                    dt{
+                        float: left;
+                        margin-right: 20px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 26px;
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    dd{
+                        float: left;
+                        margin-right: 10px;
+                        font-size: 14px;
+                        line-height: 26px;
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    a:hover{
+                        color: #a66b42
+                    }
+                }
+            }
+        }
+    }
+}
+/*******商品列表*****/ 
+.wrap{
+    width: 100%;
+    .list{
+        width: 1000px;
+        margin: 0 auto;
+        p{
+            height: 30px;
+            font-size:20px;
+            color: #dbb022;
+            line-height: 30px;
+        }
+        ul{
+           width: 1000px;
+           overflow: hidden;
+           li{
+               float: left;
+               width: 196px;
+               margin-right: 4px;
+
+                a{
+                    display:block;
+                    width: 196px;
+                    height: 290px;
+                    img{
+                        width: 196px;
+                        height: 290px;
+                    } 
+                }
+                h3{
+                    width:196px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center; 
+                }
+                button{
+                    display: block;
+                    border: none;
+                    outline: none;
+                    width: 196px;
+                    height: 40px;;
+                    text-align: center;
+                    line-height: 40px;
+                    font-size:16px; 
+                    color: #fff;
+                    background: green;
+                    border-radius:4px;
+
+                }
+               
+           } 
+        }
+
+    }
+}
+.footer_wrap{
+    width: 100%;
+    background: #f5f5f5;
+    .footer{
+        width:1000px;
+        margin: 0 auto;
+        padding: 20px 0;
+        .foot-link {
+            text-align: center;
+            line-height: 24px;
+            a{
+                font-size:12px;
+                &:hover{
+                    color: #996600;
+                } 
+            }
+            .iphone-ico i, .android-ico i, .telphone-ico i {
+                background: url(http://www.xbiao.com/images/pc/pub/ico_phone.png) no-repeat -3px 0;
+                display: inline-block;
+                width: 18px;
+                height: 20px;
+                padding-right: 5px;
+                vertical-align: middle;
+                margin-top: -4px;
+                *margin-top: 0;
+                margin-left: 2px;
+            }
+            .android-ico i {
+                background-position: -1px -26px;
+                width: 21px;
+                height: 24px;
+                line-height: 24px;
+                margin-left: 13px;
+            }
+            .telphone-ico i {
+                background-position: -6px -59px;
+                width: 11px;
+                height: 22px;
+                line-height: 22px;
+                margin-left: 12px;
+            }
+            .footline {
+                background-color: #999;
+                width: 1px;
+                height: 12px;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+            .wbfoot {
+                background: url(http://www.xbiao.com/images/index/v_xbiao.png) no-repeat 0 5px;
+                padding-left: 20px;
+                display: inline-block;
+                height: 24px;
+            }
+        }
+        .wrapper {
+            width: 1000px;
+            #bdshare {
+                margin-left: 210px;
+                margin-top: 5px;
+                display: inline;
+                _overflow-x: hidden;
+                z-index: 999999;
+                padding-bottom: 2px;
+                font-size: 12px;
+                float: left;
+                text-align: left!important;
+                zoom: 1;
+                .f_company {
+                    float: left;
+                    padding-top: 7px;
+                    font-size: 12px;
+                }
+                a {
+                    display: block;
+                    font-family: 'å®‹ä½“',Arial;
+                    height: 16px;
+                    float: left;
+                    cursor: pointer;
+                    padding-top: 6px;
+                    padding-bottom: 3px;
+                    padding-left: 22px;
+                }
+                a {
+                    background: url(http://bdimg.share.baidu.com/static/images/is.png?cdnversion=20131219) no-repeat;
+                }
+                .bds_tsina {
+                    background-position: 0 -115px!important;
+                }
+                .bds_qzone {
+                    background-position: 0 -75px!important;
+                }
+                .bds_tqq {
+                    background-position: 0 -235px!important;
+                }
+                .bds_renren {
+                    background-position: 0 -195px!important;
+                }
+                span.bds_more,{
+                   
+                    display: block;
+                    font-family: 'å®‹ä½“',Arial;
+                    height: 16px;
+                    float: left;
+                    cursor: pointer;
+                    padding-top: 6px;
+                    padding-bottom: 3px;
+                    padding-left: 22px;
+                }
+                .shareCount {
+                    width: 37px;
+                    height: 16px;
+                    background-position: 0 -30px!important;
+                    margin-top: 5px;
+                    overflow: hidden;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        } 
+        .copyright {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+            img {
+                display: inline-block;
+                border: none;
+                vertical-align: top;
+            }
+            a:hover {
+                color: #996600;
+                text-decoration: none;
+                
+            }
+        }
+    }
+}
