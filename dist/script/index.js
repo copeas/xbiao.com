@@ -2,7 +2,6 @@
 
 
 
-
 // 轮播图；
 function Banner(){}
 $.extend(Banner.prototype,{

@@ -1,117 +1,6 @@
 
-// 瀑布流
-function ShopCar(){
-}
-$.extend(ShopCar.prototype,{
-    init:function(){
-        this.page=1;
-        this.main = $(".watch_container ul");
-        this.loading = false;
-        this.loadJson()
-        .then(function(res){
-            //console.log(res);
-            this.json = res.subjects;
-            this.renderPage()
-        })
-        this.bindEvent();
-    },
-    loadJson:function(){
-        var opt = {
-            url:"http://localhost:82/proxy/api.douban.com/v2/movie/top250",
-            data:{start:this.page,count:40},
-            type:"GET",
-            context : this
-        }
-        return $.ajax(opt);
-    },
-    renderPage:function(){
-         //console.log(this.json)
-        var html = "";
-        for(var i = 0 ; i < this.json.length ; i ++){
-            html += `<li>
-                        <img src="${this.json[i].images.small}" alt="">
-                        <h3>${this.json[i].title}</h3>
-                        <button>买不买</button>
-                    </li>`
-            //console.log(this.json[i].title)
-        }
-        this.main.html(this.main.html() + html);
-        this.sortPage();
-        this.loading = true;
-    },
-    sortPage(){
-        // var aBox = this.main.children();
-        // // console.log(aBox);
-        // var heightArray = [];
-        // for(var i = 0 ; i < aBox.length ; i ++ ){
-        //     // 第一排设置基准;
-        //     if( i < 10){
-        //         console.log(aBox.eq(i));
-        //         heightArray.push(aBox.eq(i).height());
-        //      }else{
-        //         // 找到最小值 （第一排中最矮的一个）
-        //         // Math.min.apply => 可取的数组中的最小值;
-        //         var min = Math.min.apply(false,heightArray);
-        //         // 最小值和最小值的下标;
-        //         var minIndex = heightArray.indexOf(min);
-                
-        //          // 给最小值加上拼接之后的高度;
-        //          heightArray[minIndex] += aBox.eq(i).height();
-        //     }
-        // }
-        // this.loading = false;
 
-        if(this.loading == false){
-            return 0;
-        }
-        var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-        // 显示的高度有多高;
-        var showHeight = document.documentElement.clientHeight + scrollTop;
-        // 最后一个元素;
-        var aBox = this.main.children();
-       // console.log(aBox);
-        var lastLi = aBox[aBox.length - 1];
-        if(lastLi.offsetTop <= showHeight + 200){
-            // 加载数据                    
-            this.loadJson()                    
-            this.renderPage();
-            
-            console.log(this.page) ;           
-        }
-        this.loading = false;
-    },
-    bindEvent(){
-        $(window).on("scroll",this.sortPage.bind(this));
-    },
-    // ifLoad(){
-    //     // console.log(1);
-    //     // scrollTop ;
-    //     // 最后一张图片;
-    //     // 当前屏幕的高度;
-    //     var scrollTop = $("html,body").scrollTop();
-    //     var clientHeight = $("html")[0].clientHeight;
-    //     var lastBox = this.main.children(":last");
-    //     // console.log(scrollTop,clientHeight,lastBox.offset());
-    //     if(scrollTop + clientHeight > lastBox.offset().top){
-    //         // 加载数据;
-    //         if(this.loading){
-    //             return 0;
-    //         }
-    //         this.loading = true;
-    //          console.log("加载");
-    //         this.page ++;
-    //         this.loadJson()
-    //         .then(function(){
-    //             // deferred 的 done 回调 this指向的都是 jquery 对象本身
-    //             //console.log(res,this);
-    //             this.renderPage();
-    //         })
-    //     }
-    // }
-})
 
-var car = new ShopCar();
-car.init();
 
 // 轮播图；
 function Banner(){}
@@ -309,3 +198,161 @@ movenav4.init({
     right_btn : ".btn_right4",
     hide_btn:".more4"
 })
+/***********换一批看看***************/
+$(function(){
+    $(".hot_change a").click(function(){
+        
+        $(".hot_list1").toggle()
+    })
+    /******板块排行 选项卡********/
+    $('.bbs-nav ul li').bind('mouseover',function(){
+        var index = $(this).index();
+        $(this).siblings().removeClass('act');
+        $(this).addClass('act');
+        $('.bbs-cont').hide();
+        $('.bbs-cont').eq(index).show();
+    }) 
+    // 腕表排行tab切换
+	$('.watch-nav ul li').bind('mouseover',function(){
+		var index = $(this).index();
+		$(this).siblings().removeClass('act');
+		$(this).addClass('act');
+		$('.watch-cont').hide();
+		$('.watch-cont').eq(index).show();
+	})
+
+
+
+	$('.watch-cont ul li').bind('mouseover',function(){
+		$(this).find('.watch-img').show().parent('li').siblings().find('.watch-img').hide();
+	})
+})
+/********毒物腕表************/
+function Skip(){
+} 
+$.extend(Skip.prototype,{
+    init:function(){
+        this.wrap = $(".random_list ul");
+        this.page_btn = $(".random_tit li");
+        this.now_page = 0;
+        this.loadJson()
+        .then(function(res){
+            //console.log(res);
+            this.json = res.subjects;
+            this.renderPage()
+        })
+        
+        this.bindEvent();
+    },
+    bindEvent:function(){
+        this.page_btn.click($.proxy(this.changePage , this));
+    },
+    loadJson:function(){
+        var opt = {
+            url:"http://localhost:82/proxy/api.douban.com/v2/movie/top250",
+            data:{start:0,count:250},
+            type:"GET",
+            context : this
+        }
+        return $.ajax(opt);;
+    },
+    renderPage(){
+        var list = this.json;
+        var html = "";
+        for(var i = 5 * this.now_page ; i <= 5* this.now_page + 4; i ++){
+            html += `
+                    <li>
+                        <figure>
+                            <section>
+                                <a href="javascript:void(0);">
+                                    <img src="${list[i].images.small}" alt="">
+                                </a>
+                            </section>
+                            <figcaption>
+                                    <a href="http://www.xbiao.com/iwc/43274/" target="_blank">${list[i].title}</a>
+                                    <span>¥${list[i].id}</span>
+                                    <i><img src="http://www.xbiao.com/images/pc/2017/heart.png">${list[i].year}人喜欢</i>
+                            </figcaption>
+                        </figure>
+                    </li>`
+        }
+        this.wrap.html(html);
+    },
+    changePage(){
+        //console.log("huanyiye")
+        if(this.now_page == 19){
+            this.now_page = 0
+        }else{
+            this.now_page++;
+        }
+        
+        this.renderPage();
+    }
+})
+var skip = new Skip();
+skip.init({
+
+});
+/******资深网友*******/ 
+function netfriend(){
+	var count = 1;						 //- 计数
+	var n     = 6;                       //- 每次显示的数量
+	var len   = $('.deep-watcher-list li').length;  //- 总数
+	$('.deep-watcher-list li').hide();
+	$('.deep-watcher-list li:lt('+n+')').show();
+	$('.deep-watcher .title-change').bind('click',function(){
+		count++;
+		var old = n*count;
+		if(n*count>=len){
+			$('.deep-watcher-list li').hide();
+			$('.deep-watcher-list li:lt('+len+')').show();
+			$('.deep-watcher-list li:lt('+n*(count-1)+')').hide();
+			count=0;
+		}else{
+			$('.deep-watcher-list li').hide();
+			$('.deep-watcher-list li:lt('+n*count+')').show();
+			$('.deep-watcher-list li:lt('+n*(count-1)+')').hide();
+		}
+	})	
+}
+netfriend()
+/*******最新解答********/
+function random(){
+	var count = 1;						 //- 计数
+	var n     = 5;                       //- 每次显示的数量
+	var len   = $('.lastest-list li').length;  //- 总数
+	$('.lastest-list li').hide();
+	$('.lastest-list li:lt('+n+')').show();
+	$('.lastest-answer .title-change').bind('click',function(){
+		count++;
+		var old = n*count;
+		if(n*count>=len){
+			$('.lastest-list li').hide();
+			$('.lastest-list li:lt('+len+')').show();
+			$('.lastest-list li:lt('+n*(count-1)+')').hide();
+			count=0;
+		}else{
+			$('.lastest-list li').hide();
+			$('.lastest-list li:lt('+n*count+')').show();
+			$('.lastest-list li:lt('+n*(count-1)+')').hide();
+		}
+	})	
+}
+random() 
+/*************现场直击******************/ 
+
+function scene(){
+    var btn = $(".sub_item"),
+        img = $(".main_box a");
+
+    img.eq(0).show();
+
+    btn.mouseover(function(){
+        var index = $(this).index();
+        if(!$(this).hasClass("act")){
+            $(this).addClass("act").siblings().removeClass("act");
+        }
+        img.eq(index).show().siblings().hide();
+    });
+}
+scene()
