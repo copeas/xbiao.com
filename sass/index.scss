@@ -2,6 +2,34 @@
 body,html{
     height: 100%;
     width: 100%;
+.xx_active_wrap{
+    width: 100%;
+    transition: 0.3s;
+    .activex{
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        a{
+            display: block;
+            width: 1000px;
+            img{
+                width: 1000px;
+            }
+        }
+        span{
+            display: block;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            width: 30px;
+            height: 15px;
+            line-height: 15px;
+            background: #999;
+            opacity: 0.3;
+            color: #f00; 
+            cursor: pointer;
+        }
+    }
 }
 //******header********//
 header{
@@ -3085,4 +3113,5 @@ header{
     width: 45px;
     height: 45px;
     background: url(http://www.xbiao.com/images/pc/pub/floatico.png) 0 0 no-repeat; 
+}
 }

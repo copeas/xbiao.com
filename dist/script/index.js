@@ -225,7 +225,16 @@ $(function(){
 
 	$('.watch-cont ul li').bind('mouseover',function(){
 		$(this).find('.watch-img').show().parent('li').siblings().find('.watch-img').hide();
-	})
+    })
+    
+    /******活动页关闭and跳转*********/
+    $(".activex span").click(function(){
+        $(".xx_active_wrap").hide()
+    }) 
+
+    $(".activex a").click(function(){
+        location.href="list.html"
+    }) 
 })
 /********毒物腕表************/
 function Skip(){
@@ -362,3 +371,4 @@ $(".return_top").on({
         $("html,body").scrollTop(0);
     }
 })
+
