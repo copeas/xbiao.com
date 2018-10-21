@@ -322,7 +322,8 @@ header {
       .wrap .list ul li {
         float: left;
         width: 196px;
-        margin-right: 4px; }
+        margin-right: 4px;
+        margin-bottom: 2px; }
         .wrap .list ul li a {
           display: block;
           width: 196px;
@@ -346,7 +347,13 @@ header {
           font-size: 16px;
           color: #fff;
           background: green;
-          border-radius: 4px; }
+          border-radius: 4px;
+          cursor: pointer; }
+          .wrap .list ul li button:active {
+            width: 196px;
+            height: 40px;
+            line-height: 36px;
+            border: 2px solid #00ffaa; }
 
 .footer_wrap {
   width: 100%;

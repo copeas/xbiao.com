@@ -348,6 +348,7 @@ header{
                float: left;
                width: 196px;
                margin-right: 4px;
+               margin-bottom: 2px; 
 
                 a{
                     display:block;
@@ -376,6 +377,13 @@ header{
                     color: #fff;
                     background: green;
                     border-radius:4px;
+                    cursor: pointer;
+                    &:active{
+                        width: 196px;
+                        height: 40px;
+                        line-height: 36px;
+                        border:  2px solid #00ffaa;
+                    }
 
                 }
                
