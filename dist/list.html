@@ -32,13 +32,19 @@
                     </a>
                 </div>
                 <!-- 购物车 -->
-                <div class="center shoppingCar">
+                <div class="center shopingCar">
                     <a href="javascript:void(0)">
-                         <!-- <i>购物车</i>         -->
+                               
                         <span>
-                            <i>3</i>
+                            <!-- <i>3</i> -->
                         </span>
-                        
+                        <ul class="goodList clearfix">
+                            <!-- <li>
+                                <img src="" alt="" srcset="">
+                                <h3>标题</h3>
+                                <strong>100</strong>
+                            </li> -->
+                        </ul>
                     </a>
                     
                 </div>
@@ -164,7 +170,7 @@
     <div class="wrap clearfix">
         <div class="list clearfix">
                 <p>你想要的都没有</p>
-                <ul class="clearfix">
+                <ul class="clearfix list_de">
                     <!-- <li>
                         <a href="javascript:void(0)">
                             <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.webp" alt="">
@@ -201,86 +207,9 @@
     
         
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script >
-        // 瀑布流
-        function ShopCar(){
-        }
-        $.extend(ShopCar.prototype,{
-            init:function(){
-                this.nowPage= 0;
-                this.main = $(".list ul");
-                this.loading = false;
-                this.loadJson()
-                .then(function(res){
-                    
-                    this.json = res//.subjects;
-                   
-                    this.renderPage()
-                })
-                this.bindEvent();
-            },
-            loadJson:function(){
-                var opt = {
-                    
-                    url:"data.json",
-                   
-                    type:"GET",
-                    context : this
-                }
-                return $.ajax(opt);
-            
-                
-            },
-            renderPage:function(){   
-                //console.log(this.json);            
-                var list =  this.json.subjects;
-               // console.log(list);    
-                var html = "";
-                for(var i = 20*this.nowPage ; i <= 20*this.nowPage+19 ; i ++){
-                    html += `<li>
-                                <a href="javascript:void(0)">
-                                    <img src="${list[i].images.small}" alt="">    
-                                </a>                                
-                                <h3>${list[i].title}</h3>
-                                <button goods_Id="${list[i].id}">加入购物车</button>
-                            </li>`
-                   
-                }
-                this.main.html(this.main.html() + html);
-            
-                this.loading = false;   
-                
-            },
-            bindEvent(){
-                $(window).on("scroll",this.ifLoad.bind(this));
-            },
-            ifLoad(){
-                if(this.loaded == false){
-                    return 0;
-                 }
-                 var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-                 // 显示的高度有多高;
-                var showHeight = document.documentElement.clientHeight + scrollTop;
-                // 最后一个元素;
-                var aLi = $(".list ul li")
-                //console.log(aLi);
-                var lastLi =aLi[aLi.length -1];
-                //console.log(lastLi);
-                if( lastLi.offsetTop <= showHeight ){
-                    this.loading = true;
-                    this.nowPage ++;
-                    console.log(this.nowPage);
-                
-                    if(this.nowPage > 4){
-                        return 0;
-                    }
-                    this.renderPage();
-
-                }
-            }
-        })
-        var car = new ShopCar();
-        car.init();
+    <script src="jquery.cookie.js"></script>
+    <script src="script/list.js" >
+       
     </script> 
 </body>
 </html>

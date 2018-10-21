@@ -356,3 +356,9 @@ function scene(){
     });
 }
 scene()
+/********huidaodingbu***********/ 
+$(".return_top").on({
+    "click":function(){
+        $("html,body").scrollTop(0);
+    }
+})

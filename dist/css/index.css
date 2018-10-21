@@ -2536,3 +2536,12 @@ header {
       .footer_wrap .footer .copyright a:hover {
         color: #996600;
         text-decoration: none; }
+
+.return_top a {
+  display: block;
+  position: fixed;
+  left: 1300px;
+  bottom: 155px;
+  width: 45px;
+  height: 45px;
+  background: url(http://www.xbiao.com/images/pc/pub/floatico.png) 0 0 no-repeat; }

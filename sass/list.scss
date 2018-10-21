@@ -146,16 +146,17 @@ header{
             }
         }
         .center{
-            width: 70px;
+            width: 160px;
             height: 40px;
             // background: yellowgreen;
             float: left;
             a{  
                 display: block;
-                width: 70px;
+                width: 160px;
                 height: 40px;
-                // &:hover{
-
+                position: relative;
+                // &:hover .goodList{
+                //     display: block;
                 // }
                 
                 span{
@@ -180,6 +181,62 @@ header{
                         line-height: 14px;
                     }
                 }
+                .goodList{
+                    width: 200px;
+                    max-height: 500px;
+                    position: absolute;
+                    overflow: auto;
+                    top: 40px;
+                    // display: none;
+                    z-index: 999;
+                    background: #fff;
+                    box-shadow: 0 0 1px #ccc;
+                    li{
+                        width: 200px;
+                        height: 60px;
+                        img{
+                            display: inline-block;
+                            float: left;
+                            height: 60px;
+                            padding: 0 3px;
+
+                        }
+                        h3{
+
+                            width: 80px;
+                            height: 60px;
+                            float: left;
+                            line-height: 60px;
+                           
+                            font-size: 12px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            
+
+
+                        }
+                        strong{
+                            display: block;
+                            float: left;
+                            line-height: 60px;
+                            padding:0 5px;
+                            color: yellowgreen;
+                        }
+                        i{
+                            margin-left:20px; 
+                            display: block;
+                            line-height: 60px;
+                            float: left;
+                            color: #f00;
+                            font-size: 30px;
+
+                        }
+                    }
+
+                }
+                // &:hover .goodList{
+                //     display: block
+                //  }
             }
         }
         .right{

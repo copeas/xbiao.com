@@ -169,14 +169,13 @@ header {
         header .lslisi .left .topWeichat:hover i {
           display: block; }
     header .lslisi .center {
-      width: 160px;
+      width: 70px;
       height: 40px;
       float: left; }
       header .lslisi .center a {
         display: block;
-        width: 160px;
-        height: 40px;
-        position: relative; }
+        width: 70px;
+        height: 40px; }
         header .lslisi .center a span {
           position: relative;
           margin-left: 30px;
@@ -197,44 +196,6 @@ header {
             right: 0;
             text-align: center;
             line-height: 14px; }
-        header .lslisi .center a .goodList {
-          width: 200px;
-          max-height: 500px;
-          position: absolute;
-          overflow: auto;
-          top: 40px;
-          z-index: 999;
-          background: #fff;
-          box-shadow: 0 0 1px #ccc; }
-          header .lslisi .center a .goodList li {
-            width: 200px;
-            height: 60px; }
-            header .lslisi .center a .goodList li img {
-              display: inline-block;
-              float: left;
-              height: 60px;
-              padding: 0 3px; }
-            header .lslisi .center a .goodList li h3 {
-              width: 80px;
-              height: 60px;
-              float: left;
-              line-height: 60px;
-              font-size: 12px;
-              white-space: nowrap;
-              overflow: hidden; }
-            header .lslisi .center a .goodList li strong {
-              display: block;
-              float: left;
-              line-height: 60px;
-              padding: 0 5px;
-              color: yellowgreen; }
-            header .lslisi .center a .goodList li i {
-              margin-left: 20px;
-              display: block;
-              line-height: 60px;
-              float: left;
-              color: #f00;
-              font-size: 30px; }
     header .lslisi .right {
       float: right;
       height: 40px;
@@ -307,203 +268,56 @@ header {
         header .lslisi .right .sign a:hover {
           color: #996600; }
 
-.nav_groups {
-  width: 100%;
-  height: 64px;
-  margin-bottom: 15px;
-  padding-top: 11px;
-  background: url(http://www.xbiao.com/images/pc/2017/menu-bg.jpg) repeat 0 0; }
-  .nav_groups nav {
-    width: 1000px;
-    margin: 0 auto; }
-    .nav_groups nav ul {
-      width: 1200px;
-      overflow: hidden; }
-      .nav_groups nav ul li {
-        float: left;
-        padding: 0 23px 0 23px;
-        margin-left: -3px;
-        background: url(http://www.xbiao.com/images/pc/2017/menu-line.jpg) no-repeat left center; }
-        .nav_groups nav ul li dl {
-          overflow: hidden; }
-          .nav_groups nav ul li dl dt {
-            float: left;
-            margin-right: 20px;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 26px; }
-            .nav_groups nav ul li dl dt a {
-              color: #fff; }
-          .nav_groups nav ul li dl dd {
-            float: left;
-            margin-right: 10px;
-            font-size: 14px;
-            line-height: 26px; }
-            .nav_groups nav ul li dl dd a {
-              color: #fff; }
-          .nav_groups nav ul li dl a:hover {
-            color: #a66b42; }
-
-/*******商品列表*****/
+/*****物品详情******/
 .wrap {
   width: 100%; }
-  .wrap .list {
+  .wrap .details {
     width: 1000px;
-    margin: 0 auto; }
-    .wrap .list p {
-      height: 30px;
-      font-size: 20px;
-      color: #dbb022;
-      line-height: 30px; }
-    .wrap .list ul {
-      width: 1000px;
-      overflow: hidden; }
-      .wrap .list ul li {
-        float: left;
-        width: 196px;
-        margin-right: 4px;
-        margin-bottom: 2px; }
-        .wrap .list ul li a {
-          display: block;
-          width: 196px;
-          height: 290px; }
-          .wrap .list ul li a img {
-            width: 196px;
-            height: 290px; }
-        .wrap .list ul li h3 {
-          width: 196px;
-          height: 30px;
-          line-height: 30px;
-          text-align: center; }
-        .wrap .list ul li button {
-          display: block;
-          border: none;
-          outline: none;
-          width: 196px;
-          height: 40px;
-          text-align: center;
-          line-height: 40px;
-          font-size: 16px;
-          color: #fff;
-          background: green;
-          border-radius: 4px;
-          cursor: pointer; }
-          .wrap .list ul li button:active {
-            width: 196px;
-            height: 40px;
-            line-height: 36px;
-            border: 2px solid #00ffaa; }
-
-.footer_wrap {
-  width: 100%;
-  background: #f5f5f5; }
-  .footer_wrap .footer {
-    width: 1000px;
-    margin: 0 auto;
-    padding: 20px 0; }
-    .footer_wrap .footer .foot-link {
-      text-align: center;
-      line-height: 24px; }
-      .footer_wrap .footer .foot-link a {
-        font-size: 12px; }
-        .footer_wrap .footer .foot-link a:hover {
-          color: #996600; }
-      .footer_wrap .footer .foot-link .iphone-ico i, .footer_wrap .footer .foot-link .android-ico i, .footer_wrap .footer .foot-link .telphone-ico i {
-        background: url(http://www.xbiao.com/images/pc/pub/ico_phone.png) no-repeat -3px 0;
-        display: inline-block;
-        width: 18px;
-        height: 20px;
-        padding-right: 5px;
-        vertical-align: middle;
-        margin-top: -4px;
-        *margin-top: 0;
-        margin-left: 2px; }
-      .footer_wrap .footer .foot-link .android-ico i {
-        background-position: -1px -26px;
-        width: 21px;
-        height: 24px;
-        line-height: 24px;
-        margin-left: 13px; }
-      .footer_wrap .footer .foot-link .telphone-ico i {
-        background-position: -6px -59px;
-        width: 11px;
-        height: 22px;
-        line-height: 22px;
-        margin-left: 12px; }
-      .footer_wrap .footer .foot-link .footline {
-        background-color: #999;
-        width: 1px;
-        height: 12px;
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 10px; }
-      .footer_wrap .footer .foot-link .wbfoot {
-        background: url(http://www.xbiao.com/images/index/v_xbiao.png) no-repeat 0 5px;
-        padding-left: 20px;
-        display: inline-block;
-        height: 24px; }
-    .footer_wrap .footer .wrapper {
-      width: 1000px; }
-      .footer_wrap .footer .wrapper #bdshare {
-        margin-left: 210px;
-        margin-top: 5px;
-        display: inline;
-        _overflow-x: hidden;
-        z-index: 999999;
-        padding-bottom: 2px;
-        font-size: 12px;
-        float: left;
-        text-align: left !important;
-        zoom: 1; }
-        .footer_wrap .footer .wrapper #bdshare .f_company {
-          float: left;
-          padding-top: 7px;
-          font-size: 12px; }
-        .footer_wrap .footer .wrapper #bdshare a {
-          display: block;
-          font-family: 'å®‹ä½“',Arial;
-          height: 16px;
-          float: left;
-          cursor: pointer;
-          padding-top: 6px;
-          padding-bottom: 3px;
-          padding-left: 22px; }
-        .footer_wrap .footer .wrapper #bdshare a {
-          background: url(http://bdimg.share.baidu.com/static/images/is.png?cdnversion=20131219) no-repeat; }
-        .footer_wrap .footer .wrapper #bdshare .bds_tsina {
-          background-position: 0 -115px !important; }
-        .footer_wrap .footer .wrapper #bdshare .bds_qzone {
-          background-position: 0 -75px !important; }
-        .footer_wrap .footer .wrapper #bdshare .bds_tqq {
-          background-position: 0 -235px !important; }
-        .footer_wrap .footer .wrapper #bdshare .bds_renren {
-          background-position: 0 -195px !important; }
-        .footer_wrap .footer .wrapper #bdshare span.bds_more {
-          display: block;
-          font-family: 'å®‹ä½“',Arial;
-          height: 16px;
-          float: left;
-          cursor: pointer;
-          padding-top: 6px;
-          padding-bottom: 3px;
-          padding-left: 22px; }
-        .footer_wrap .footer .wrapper #bdshare .shareCount {
-          width: 37px;
-          height: 16px;
-          background-position: 0 -30px !important;
-          margin-top: 5px;
-          overflow: hidden;
-          font-size: 12px;
-          line-height: 16px; }
-    .footer_wrap .footer .copyright {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 12px; }
-      .footer_wrap .footer .copyright img {
-        display: inline-block;
-        border: none;
-        vertical-align: top; }
-      .footer_wrap .footer .copyright a:hover {
-        color: #996600;
-        text-decoration: none; }
+    margin: 40px auto; }
+    .wrap .details .small_pic {
+      width: 270px;
+      height: 405px;
+      position: relative;
+      box-shadow: 0 0 5px #000;
+      margin-right: 200px;
+      float: left; }
+      .wrap .details .small_pic .film {
+        width: 270px;
+        height: 405px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999; }
+      .wrap .details .small_pic img {
+        width: 270px; }
+      .wrap .details .small_pic .frame {
+        width: 90px;
+        height: 125px;
+        box-shadow: 0 0 5px #000;
+        border-radius: 3px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        display: none;
+        background-size: 270px 405px;
+        background-repeat: no-repeat; }
+    .wrap .details .big {
+      width: 270px;
+      height: 405px;
+      position: relative;
+      box-shadow: 0 0 5px #000;
+      float: left;
+      position: relative;
+      overflow: hidden;
+      display: none; }
+      .wrap .details .big img {
+        width: 910px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+    .wrap .details .title {
+      float: right;
+      width: 200px;
+      height: 60px;
+      border: 3px solid #f00000; }
